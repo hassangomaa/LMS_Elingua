@@ -1,10 +1,10 @@
 <?php
 
 return [
-
-    'app_sync' => env('APP_SYNC', false),
-    'is_localhost' => env('IS_LOCALHOST', false),
-    'allow_custom_domain'=> env('ALLOW_CUSTOM_DOMAIN',false),
+//
+//    'app_sync' => env('APP_SYNC', false),
+//    'is_localhost' => env('IS_LOCALHOST', false),
+//    'allow_custom_domain'=> env('ALLOW_CUSTOM_DOMAIN',false),
     /*
     |--------------------------------------------------------------------------
     | Application Name
@@ -16,7 +16,8 @@ return [
     |
     */
 
-    'name' => saasEnv('APP_NAME', 'InfixLMS'),
+//    'name' => saasEnv('APP_NAME', 'InfixLMS'),
+    'name' => env('APP_NAME', 'Laravel'),
 
     /*
     |--------------------------------------------------------------------------
@@ -56,9 +57,9 @@ return [
     */
 
     'url' => env('APP_URL', 'http://localhost'),
-
-    'short_url' => preg_replace('#^https?://#', '', rtrim(env('APP_URL', 'http://localhost'),'/')),
-
+//
+//    'short_url' => preg_replace('#^https?://#', '', rtrim(env('APP_URL', 'http://localhost'),'/')),
+//
     'asset_url' => env('ASSET_URL', null),
 
     /*

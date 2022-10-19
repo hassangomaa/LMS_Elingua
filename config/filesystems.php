@@ -75,10 +75,10 @@ return [
             'driver' => 'dropbox',
             'authorization_token' => saasEnv('DROPBOX_AUTH_TOKEN'),
         ],
-        'custom' => [
-            'driver' => 'local',
-            'root' => base_path() . '/public/uploads',
-        ]
+//        'custom' => [
+//            'driver' => 'local',
+//            'root' => base_path() . '/public/uploads',
+//        ]
 
     ],
     /*

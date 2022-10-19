@@ -37,7 +37,8 @@ class FrontendHomeController extends Controller
             $blocks = Cache::rememberForever('homepage_block_positions' . $domain, function () {
                 return DB::table('homepage_block_positions')->select(['id', 'block_name', 'order'])->orderBy('order', 'asc')->get();
             });
-
+//            return Storage::path('');
+//            return public_path();
             return view(theme('pages.index'), compact('blocks'));
         } catch (\Exception $e) {
             return response()->json(['error' => $e->getMessage()]);
