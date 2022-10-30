@@ -87,10 +87,10 @@ Route::group([
         Route::post('/make-order', 'WebsiteApiController@makeOrder');
         Route::post('/make-payment/{gateWayName}', 'WebsiteApiController@payWithGateWay');
         Route::get('/my-billing-address', 'WebsiteApiController@myBilling');
-
+####################################################################################################################333
         Route::post('paytm-order-generate', 'WebsiteApiController@paytmOrderGenerate');
         Route::post('paytm-order-verify', 'WebsiteApiController@paytmOrderVerify');
-
+##############################################################
 
         //quiz route
         Route::post('quiz-start/{course_id}/{quiz_id}', 'WebsiteApiController@quizStart');

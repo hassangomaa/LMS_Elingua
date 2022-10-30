@@ -34,6 +34,7 @@ class AppServiceProvider extends ServiceProvider
                 return Valuestore::make((base_path() . '/general_settings.json'));
             });
         }
+//        $this->app->register(\L5Swagger\L5SwaggerServiceProvider::class);
     }
 
     /**

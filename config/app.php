@@ -192,6 +192,7 @@ return [
         Yajra\DataTables\DataTablesServiceProvider::class,
         App\Providers\MailConfigServiceProvider::class,
 //        App\Providers\CompactThemeServiceProvider::class,
+//        L5Swagger\L5SwaggerServiceProvider::class,
 
     ],
 
