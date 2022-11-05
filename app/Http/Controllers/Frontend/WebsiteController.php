@@ -1353,7 +1353,7 @@ class WebsiteController extends Controller
     public function contact()
     {
         try {
-            $page_content = app('getHomeContent');
+            $page_content = "";
             return view(theme('pages.contact'), compact('page_content'));
         } catch (\Exception $e) {
             GettingError($e->getMessage(), url()->current(), request()->ip(), request()->userAgent());

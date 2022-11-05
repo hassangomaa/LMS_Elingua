@@ -3375,7 +3375,7 @@ if (!function_exists('getIpBlockList')) {
 if (!function_exists('HomeContents')) {
     function HomeContents($value = null)
     {
-        $setting = app('getHomeContent')->where('key', $value)->first();
+        $setting = "";
         return $setting ? $setting->value : '';
     }
 }

@@ -9,7 +9,7 @@ class InstructorsPageBecomeInstructorSection extends Component
 
     public function render()
     {
-        $data['homeContent'] = app('getHomeContent');
+        $data['homeContent'] = "";
         return view(theme('components.instructors-page-become-instructor-section'), $data);
     }
 }

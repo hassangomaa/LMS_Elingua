@@ -35,13 +35,14 @@ class FrontendManageController extends Controller
     // HomeContent
     public function HomeContent()
     {
+
         try {
             if (function_exists('SaasDomain')) {
                 $domain = SaasDomain();
             } else {
                 $domain = 'main';
             }
-            $home_content = app('getHomeContent');
+            $home_content = "";
             $pages = FrontPage::where('status', 1)->get();
             $blocks = Cache::rememberForever('homepage_block_positions' . $domain, function () {
                 return DB::table('homepage_block_positions')->select(['id', 'block_name', 'order'])->orderBy('order', 'asc')->get();
@@ -159,7 +160,7 @@ class FrontendManageController extends Controller
     public function PageContent()
     {
         try {
-            $page_content = app('getHomeContent');
+            $page_content = "";
             return view('frontendmanage::page_content', compact('page_content'));
         } catch (\Exception $e) {
             GettingError($e->getMessage(), url()->current(), request()->ip(), request()->userAgent());
@@ -260,7 +261,7 @@ class FrontendManageController extends Controller
     public function ContactPageContent()
     {
         try {
-            $page_content = app('getHomeContent');;
+            $page_content = "";;
             return view('frontendmanage::contact_page_content', compact('page_content'));
         } catch (\Exception $e) {
             GettingError($e->getMessage(), url()->current(), request()->ip(), request()->userAgent());

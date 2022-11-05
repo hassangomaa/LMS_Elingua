@@ -18,41 +18,23 @@ class HomeContent extends Model
 
     public $translatable = ['value'];
 
-//    public static function boot()
-//    {
-//        if (function_exists('SaasDomain')) {
-//            $domain = SaasDomain();
-//        } else {
-//            $domain = 'main';
-//        }
-//        parent::boot();
-//        self::created(function ($model) use ($domain) {
-//
-//            GenerateHomeContent($domain);
-//        });
-//        self::updated(function ($model) use ($domain) {
-//            GenerateHomeContent($domain);
-//        });
-//    }
-
     public static function boot()
     {
+        if (function_exists('SaasDomain')) {
+            $domain = SaasDomain();
+        } else {
+            $domain = 'main';
+        }
         parent::boot();
-        self::created(function ($model) {
-            if (function_exists('clearAllLangCache')) {
-                clearAllLangCache('home_contents_');
-            }
+        self::created(function ($model) use ($domain) {
+
+            GenerateHomeContent($domain);
         });
-        self::updated(function ($model) {
-            if (function_exists('clearAllLangCache')) {
-                clearAllLangCache('home_contents_');
-            }
-        });
-        self::deleted(function ($model) {
-            if (function_exists('clearAllLangCache')) {
-                clearAllLangCache('home_contents_');
-            }
+        self::updated(function ($model) use ($domain) {
+            GenerateHomeContent($domain);
         });
     }
+
+
 
 }

@@ -96,7 +96,7 @@ class SettingController extends Controller
 
     public function maintenance()
     {
-        $setting =json_decode(json_encode(app('getHomeContent')->pluck('value','key')));
+        $setting =json_decode(json_encode(""));
         return view('setting::maintenance', compact('setting'));
     }
 

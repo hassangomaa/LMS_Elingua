@@ -210,7 +210,7 @@ class AppServiceProvider extends ServiceProvider
             View::composer([
                 theme('*')
             ], function ($view) {
-                $data['frontendContent'] = $data['homeContent'] =json_decode(json_encode(app('getHomeContent')->pluck('value','key')));
+                $data['frontendContent'] = $data['homeContent'] =json_decode("");
                 $view->with($data);
             });
 
