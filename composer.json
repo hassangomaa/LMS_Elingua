@@ -87,8 +87,7 @@
     },
     "extra": {
         "laravel": {
-            "dont-discover": [
-            ]
+            "dont-discover": []
         },
         "google/apiclient-services": [
             "Drive"
