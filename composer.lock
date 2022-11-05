@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9d3327b69838100bc2211d52b788ff33",
+    "content-hash": "8ca6579fdf064752983a975bbfafcaa1",
     "packages": [
         {
             "name": "anandsiddharth/laravel-paytm-wallet",
@@ -10146,93 +10146,6 @@
                 "source": "https://github.com/spn4/ar-php/tree/v1.0.0"
             },
             "time": "2022-04-08T05:47:48+00:00"
-        },
-        {
-            "name": "spondonit/lms-service",
-            "version": "v1.2.5",
-            "source": {
-                "type": "git",
-                "url": "git@gitlab.com:spn4/lms-service.git",
-                "reference": "0a386bf8cab68cd89a9b3b69b41b78527d93e47e"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://gitlab.com/api/v4/projects/spn4%2Flms-service/repository/archive.zip?sha=0a386bf8cab68cd89a9b3b69b41b78527d93e47e",
-                "reference": "0a386bf8cab68cd89a9b3b69b41b78527d93e47e",
-                "shasum": ""
-            },
-            "require": {
-                "spondonit/service": "dev-master"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "SpondonIt\\LmsService\\SpondonItLmsServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "SpondonIt\\LmsService\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "spondonit",
-                    "email": "hello@spondonit.com"
-                }
-            ],
-            "description": "'Service Provider for Infix Lms application'",
-            "time": "2022-06-06T08:52:07+00:00"
-        },
-        {
-            "name": "spondonit/service",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "git@gitlab.com:spn4/service.git",
-                "reference": "5c4b3615e9fe8f5a6cece937ce1fb46e50967fa8"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://gitlab.com/api/v4/projects/spn4%2Fservice/repository/archive.zip?sha=5c4b3615e9fe8f5a6cece937ce1fb46e50967fa8",
-                "reference": "5c4b3615e9fe8f5a6cece937ce1fb46e50967fa8",
-                "shasum": ""
-            },
-            "default-branch": true,
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "SpondonIt\\Service\\SpondonItServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "files": [
-                    "helpers/helper.php"
-                ],
-                "psr-4": {
-                    "SpondonIt\\Service\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "spondonit",
-                    "email": "hello@spondonit.com"
-                }
-            ],
-            "description": "Basic Service Provider for Spondonit application",
-            "time": "2022-05-25T13:48:31+00:00"
         },
         {
             "name": "srmklive/flysystem-dropbox-v2",

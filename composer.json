@@ -62,7 +62,6 @@
         "spatie/valuestore": "^1.2",
         "spn/laravel-zoom-api": "^v2.1.0",
         "spondonit/ar-php": "^1.0",
-        "spondonit/lms-service": "^1.2",
         "srmklive/flysystem-dropbox-v2": "^1.0",
         "stevebauman/location": "^5.2",
         "symfony/mailer": "^5.4",

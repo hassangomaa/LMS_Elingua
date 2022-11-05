@@ -18,16 +18,16 @@ Route::post('/resend', '\App\Http\Controllers\Auth\VerificationController@resend
 Route::get('auto-login/{key}', '\App\Http\Controllers\Auth\LoginController@autologin')->name('auto.login');
 
 //====================================SUB DOMAIN=============================
-// Route::group(['middleware' => ['subdomain'], 'domain' => '{subdomain}.' . config('app.short_url')], function ($routes) {
-//     Route::get('/sub', function () {
-//         return "This will respond to requests for 'admin.localhost/'";
-//     });
-// });
-//     Route::get('subdomain',function(){
-//         return '{subdomain}.'.config('app.short_url');
-//     });
+ Route::group(['middleware' => ['subdomain'], 'domain' => '{subdomain}.' . config('app.short_url')], function ($routes) {
+     Route::get('/sub', function () {
+         return "This will respond to requests for 'admin.localhost/'";
+     });
+ });
+     Route::get('subdomain',function(){
+         return '{subdomain}.'.config('app.short_url');
+     });
 //============================END SUB DOMAIN==================================
-// Route::get('/test', 'Frontend\FrontendHomeController@test');
+ Route::get('/test', 'Frontend\FrontendHomeController@test');
 
 Route::group(['namespace' => 'Frontend'], function () {
     Route::get('/', 'FrontendHomeController@index')->name('frontendHomePage');
