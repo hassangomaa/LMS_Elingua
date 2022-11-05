@@ -2598,6 +2598,7 @@ if (!function_exists('isValidTimeZone')) {
 if (!function_exists('isModuleActive')) {
     function isModuleActive($module)
     {
+//        return true;
 
         try {
             $haveModule = app('ModuleList')->where('name', $module)->first();

@@ -9,21 +9,28 @@
 <header>
                         <!-- header__left__start  -->
 
+                            <div class="logo_img translator-switch">
 
+                                <?php if(Settings('frontend_language_translation') == 1): ?>
+                                    <?php
+                                        if (auth()->check()){
+                                            $currentLang =auth()->user()->language_code;
+                                        }else{
+                                            $currentLang =app()->getLocale();
+                                        }
+                                    ?>
+                                    <select name="code" id="language_code" class="nice_Select"
+                                            onchange="location = this.value;">
+                                        <?php $__currentLoopData = getLanguageList(); $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $key => $language): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                                            <option value="<?php echo e(route('changeLanguage',$language->code)); ?>"
+                                                    <?php if($currentLang == $language->code): ?> selected <?php endif; ?>><?php echo e($language->name); ?>
 
+                                            </option>
+                                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+                                    </select>
 
-
-
-
-
-
-
-
-
-
-
-
-
+                                <?php endif; ?>
+                            </div>
 
                         <!-- header__left__start  -->
 

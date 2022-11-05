@@ -75,11 +75,11 @@
             </li>
         @endif
 
-        @if(permissionCheck('footerSetting.footer.index'))
-            <li>
-                <a href="{{route('footerSetting.footer.index')}}">{{ __('setting.Footer Setting') }}</a>
-            </li>
-        @endif
+{{--        @if(permissionCheck('footerSetting.footer.index'))--}}
+{{--            <li>--}}
+{{--                <a href="{{route('footerSetting.footer.index')}}">{{ __('setting.Footer Setting') }}</a>--}}
+{{--            </li>--}}
+{{--        @endif--}}
 
 
         @if(permissionCheck('frontend.loginpage.index'))

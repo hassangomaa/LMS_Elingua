@@ -9,8 +9,7 @@
         </div>
     </div>
 </footer>
-</div>
-</div>
+ </div>
 
 
 <?php if(isModuleActive("WhatsappSupport")): ?>

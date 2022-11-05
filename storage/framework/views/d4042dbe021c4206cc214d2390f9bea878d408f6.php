@@ -20,9 +20,10 @@
 
 <script>
 
-    
-    
-    
+    (function ($) {
+        $.fn.datepicker.dates[LANG] = <?php echo json_encode(__('calender')); ?>
+
+    }(jQuery));
 
 </script>
 

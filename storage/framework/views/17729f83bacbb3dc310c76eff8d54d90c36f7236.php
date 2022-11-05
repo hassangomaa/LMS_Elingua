@@ -1,51 +1,95 @@
+<!-- FOOTER::START  -->
+<?php if (isset($component)) { $__componentOriginal37ea9f6a2f553b40f2f014d8d4731ffdddf89467 = $component; } ?>
+<?php $component = $__env->getContainer()->make(App\View\Components\PopupContent::class, []); ?>
+<?php $component->withName('popup-content'); ?>
+<?php if ($component->shouldRender()): ?>
+<?php $__env->startComponent($component->resolveView(), $component->data()); ?>
+<?php $component->withAttributes([]); ?>
+<?php echo $__env->renderComponent(); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginal37ea9f6a2f553b40f2f014d8d4731ffdddf89467)): ?>
+<?php $component = $__componentOriginal37ea9f6a2f553b40f2f014d8d4731ffdddf89467; ?>
+<?php unset($__componentOriginal37ea9f6a2f553b40f2f014d8d4731ffdddf89467); ?>
+<?php endif; ?>
+<footer class="<?php echo e(Settings('footer_show')==0?'d-none d-sm-none d-md-block d-lg-block d-xl-block':''); ?>">
+    <?php if(@$homeContent->show_subscribe_section==1): ?>
+        <?php if (isset($component)) { $__componentOriginalad88a9851bf0461a2bf875b148005ecbb16bdc19 = $component; } ?>
+<?php $component = $__env->getContainer()->make(App\View\Components\FooterNewsLetter::class, []); ?>
+<?php $component->withName('footer-news-letter'); ?>
+<?php if ($component->shouldRender()): ?>
+<?php $__env->startComponent($component->resolveView(), $component->data()); ?>
+<?php $component->withAttributes([]); ?>
+<?php echo $__env->renderComponent(); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginalad88a9851bf0461a2bf875b148005ecbb16bdc19)): ?>
+<?php $component = $__componentOriginalad88a9851bf0461a2bf875b148005ecbb16bdc19; ?>
+<?php unset($__componentOriginalad88a9851bf0461a2bf875b148005ecbb16bdc19); ?>
+<?php endif; ?>
+    <?php endif; ?>
+    <div class="copyright_area">
+        <div class="container">
+            <div class="row">
+                                <?php if(!isset($sectionWidgets) || (count($sectionWidgets['one'])==0 && count($sectionWidgets['two'])==0 && count($sectionWidgets['three'])==0 ) ): ?>
+
+                <div class="col-xl-4 col-lg-4 col-md-6">
+                    <div class="footer_widget">
+                        <div class="footer_logo">
+                            <a href="#">
+                                <img src="<?php echo e(getCourseImage(Settings('logo2'))); ?>" alt=""
+                                     style="width: 108px">
+                            </a>
+                        </div>
+                        <p><?php echo e(function_exists('footerSettings')?footerSettings('footer_about_description'):''); ?></p>
+                        <div class="copyright_text">
+                            <p><?php echo function_exists('footerSettings')?footerSettings('footer_copy_right'):''; ?></p>
+                        </div>
+
+                        <style>
 
 
+                        </style>
+                        <div class="">
+                            <ul class="pt-3 ">
+                                <ul class="social-network social-circle col-lg-12 ">
+                                    <?php if (isset($component)) { $__componentOriginal26713553f82cefeab9a52e076638705322f16265 = $component; } ?>
+<?php $component = $__env->getContainer()->make(App\View\Components\FooterSocialLinks::class, []); ?>
+<?php $component->withName('footer-social-links'); ?>
+<?php if ($component->shouldRender()): ?>
+<?php $__env->startComponent($component->resolveView(), $component->data()); ?>
+<?php $component->withAttributes([]); ?>
+<?php echo $__env->renderComponent(); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginal26713553f82cefeab9a52e076638705322f16265)): ?>
+<?php $component = $__componentOriginal26713553f82cefeab9a52e076638705322f16265; ?>
+<?php unset($__componentOriginal26713553f82cefeab9a52e076638705322f16265); ?>
+<?php endif; ?>
+                                </ul>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="col-xl-8 col-lg-8 col-md-6">
 
+                    <?php if (isset($component)) { $__componentOriginal4ea579f24b442f4c924b3cf35249ff3cd8d5a94c = $component; } ?>
+<?php $component = $__env->getContainer()->make(App\View\Components\FooterSectionWidgets::class, []); ?>
+<?php $component->withName('footer-section-widgets'); ?>
+<?php if ($component->shouldRender()): ?>
+<?php $__env->startComponent($component->resolveView(), $component->data()); ?>
+<?php $component->withAttributes([]); ?>
+<?php echo $__env->renderComponent(); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginal4ea579f24b442f4c924b3cf35249ff3cd8d5a94c)): ?>
+<?php $component = $__componentOriginal4ea579f24b442f4c924b3cf35249ff3cd8d5a94c; ?>
+<?php unset($__componentOriginal4ea579f24b442f4c924b3cf35249ff3cd8d5a94c); ?>
+<?php endif; ?>
 
+                </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            </div>
+        </div>
+    </div>
+</footer>
 
 
 <!-- Footer Start -->

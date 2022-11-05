@@ -9,27 +9,27 @@
 <header>
                         <!-- header__left__start  -->
 
-{{--                            <div class="logo_img translator-switch">--}}
+                            <div class="logo_img translator-switch">
 
-{{--                                @if(Settings('frontend_language_translation') == 1)--}}
-{{--                                    @php--}}
-{{--                                        if (auth()->check()){--}}
-{{--                                            $currentLang =auth()->user()->language_code;--}}
-{{--                                        }else{--}}
-{{--                                            $currentLang =app()->getLocale();--}}
-{{--                                        }--}}
-{{--                                    @endphp--}}
-{{--                                    <select name="code" id="language_code" class="nice_Select"--}}
-{{--                                            onchange="location = this.value;">--}}
-{{--                                        @foreach (getLanguageList() as $key => $language)--}}
-{{--                                            <option value="{{route('changeLanguage',$language->code)}}"--}}
-{{--                                                    @if ($currentLang == $language->code) selected @endif>{{$language->name }}--}}
-{{--                                            </option>--}}
-{{--                                        @endforeach--}}
-{{--                                    </select>--}}
+                                @if(Settings('frontend_language_translation') == 1)
+                                    @php
+                                        if (auth()->check()){
+                                            $currentLang =auth()->user()->language_code;
+                                        }else{
+                                            $currentLang =app()->getLocale();
+                                        }
+                                    @endphp
+                                    <select name="code" id="language_code" class="nice_Select"
+                                            onchange="location = this.value;">
+                                        @foreach (getLanguageList() as $key => $language)
+                                            <option value="{{route('changeLanguage',$language->code)}}"
+                                                    @if ($currentLang == $language->code) selected @endif>{{$language->name }}
+                                            </option>
+                                        @endforeach
+                                    </select>
 
-{{--                                @endif--}}
-{{--                            </div>--}}
+                                @endif
+                            </div>
 
                         <!-- header__left__start  -->
 

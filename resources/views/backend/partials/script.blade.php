@@ -20,9 +20,9 @@
 
 <script>
 
-    {{--(function ($) {--}}
-    {{--    $.fn.datepicker.dates[LANG] = {!! json_encode(__('calender')) !!}--}}
-    {{--}(jQuery));--}}
+    (function ($) {
+        $.fn.datepicker.dates[LANG] = {!! json_encode(__('calender')) !!}
+    }(jQuery));
 
 </script>
 
