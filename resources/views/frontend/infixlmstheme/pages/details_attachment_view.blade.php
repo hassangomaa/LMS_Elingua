@@ -9,8 +9,8 @@
             </div>
             <div class="modal-body">
 
-                {{-- {!! @$submit_info->answer !!}
-                <hr> --}}
+                  {!! @$submit_info->answer !!}
+                <hr>  
                 @php
                     $std_file =$submit_info->file;
                     $ext =strtolower(str_replace('"]','',pathinfo($std_file, PATHINFO_EXTENSION)));
@@ -45,7 +45,7 @@
                     </div>
                 @endif
                 <div class="mt-40 d-flex justify-content-between" style="margin-top: 40px;">
-                        {{-- <button type="button" class="primary-btn tr-bg" data-dismiss="modal">@lang('lang.cancel')</button> --}}
+                          <button type="button" class="primary-btn tr-bg" data-dismiss="modal">@lang('lang.cancel')</button>  
                     @php
                         $set_filename=time().'_'.$std_file;
                     @endphp

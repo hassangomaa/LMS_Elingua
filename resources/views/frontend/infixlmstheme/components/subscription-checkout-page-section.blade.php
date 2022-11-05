@@ -230,11 +230,11 @@
 
                     <div class="single_lists">
                         <span class="total_text">
-{{--                            @if($cart->plan->price == 0)--}}
-{{--                                {{__('frontend.Payable Amount')}}--}}
-{{--                            @else--}}
-{{--                                {{__('frontend.Subtotal')}}--}}
-{{--                            @endif--}}
+                             @if($cart->plan->price == 0) 
+                                 {{__('frontend.Payable Amount')}} 
+                             @else 
+                                 {{__('frontend.Subtotal')}} 
+                             @endif 
                             {{__('frontend.Payable Amount')}}
                         </span>
                         <span class="totalBalance"> {{getPriceFormat($cart->plan->price)}}</span>

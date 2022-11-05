@@ -22,7 +22,7 @@
                                         <a href="{{ route('appointment.instructor',[$list->instructor->slug]) }}">{{ $list->instructor->name }}
                                         <img src="{{ asset('Modules/Appointment/Resources/assets/frontend/') }}/img/all-icons/country/{{ strtolower($list->instructor->userCountry->iso2) }}.svg" alt="" width="21" height="15">
                                         </span><span>
-                                        {{-- <img src="{{ asset('Modules/Appointment/Resources/assets/frontend/') }}/img/all-icons/badge.svg" alt=""> --}}
+                                          <img src="{{ asset('Modules/Appointment/Resources/assets/frontend/') }}/img/all-icons/badge.svg" alt="">  
                                         </span>
                                     </h4>
                                     <ul>
@@ -30,7 +30,7 @@
                                         <li><i class="fa fa-user-friends"></i>
                                             {{ count($list->instructor->bookStudents) }} {{ __('appointment.students') }}
                                         </li>
-                                        {{-- <li><i class="fas fa-globe"></i>English</li> --}}
+                                          <li><i class="fas fa-globe"></i>English</li>  
                                     </ul>
                                     
                                             

@@ -276,18 +276,18 @@
                                                         <form action="{{route('paymentSubmit')}}" method="post">
                                                             @csrf
                                                             <input type="hidden" name="email"
-                                                                   value="{{ @Auth::user()->email}}"> {{-- required --}}
+                                                                   value="{{ @Auth::user()->email}}">   required  
                                                             <input type="hidden" name="orderID"
                                                                    value="{{$checkout->tracking}}">
                                                             <input type="hidden" name="amount"
-                                                                   value="{{$checkout->purchase_price*100}}"> {{-- required in kobo --}}
+                                                                   value="{{$checkout->purchase_price*100}}">   required in kobo  
 
                                                             <input type="hidden" name="currency"
                                                                    value="{{Settings('currency_code')}}">
                                                             <input type="hidden" name="metadata"
                                                                    value="{{ json_encode($array = ['type' => 'Payment',]) }}">
                                                             <input type="hidden" name="reference"
-                                                                   value="{{ Paystack::genTranxRef() }}"> {{-- required --}}
+                                                                   value="{{ Paystack::genTranxRef() }}">   required  
 
                                                             <input type="hidden" name="payment_method"
                                                                    value="{{$gateway->method}}">

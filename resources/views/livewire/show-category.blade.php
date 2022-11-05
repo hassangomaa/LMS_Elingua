@@ -10,14 +10,14 @@
     </table>
 
     @push('js')
-{{--        <script>--}}
-{{--            $(document).on("click", ".activeCategoryCode", function () {--}}
-{{--                if ($(this).hasClass('active')) {--}}
-{{--                    $(this).removeClass('active');--}}
-{{--                } else {--}}
-{{--                    $(this).addClass('active');--}}
-{{--                }--}}
-{{--            });--}}
-{{--        </script>--}}
+         <script> 
+             $(document).on("click", ".activeCategoryCode", function () { 
+                 if ($(this).hasClass('active')) { 
+                     $(this).removeClass('active'); 
+                 } else { 
+                     $(this).addClass('active'); 
+                 } 
+             }); 
+         </script> 
     @endpush
 </div>

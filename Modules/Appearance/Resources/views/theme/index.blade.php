@@ -89,7 +89,7 @@
                                             <div class="col-5">
                                                 <h4>{{$item->name}}</h4>
                                             </div>
-                                            {{-- @if($item->is_active !=1 ) --}}
+                                              @if($item->is_active !=1 )  
                                             <div class="col-7 footer_div">
                                                 <div class="row ">
                                                     <div class="col-md-5 col-sm-12 text-center">

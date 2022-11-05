@@ -35,7 +35,7 @@
                                 <tr>
                                     <th width="15%">{{__('frontendmanage.Title')}}</th>
                                     <th width="15%">{{__('frontendmanage.Slug')}}</th>
-{{--                                    <th width="15%">{{__('common.Type')}}</th>--}}
+                                     <th width="15%">{{__('common.Type')}}</th> 
                                     <th width="15%">{{__('common.Status')}}</th>
                                     <th width="15%">{{__('common.Action')}}</th>
                                 </tr>
@@ -49,7 +49,7 @@
 
                                         <td> {{ Str::limit($value->title,30) }}</td>
                                         <td> {{ Str::limit($value->slug,30) }}</td>
-{{--                                        <td> {{$value->is_static==0?'User Created':'System' }}</td>--}}
+                                         <td> {{$value->is_static==0?'User Created':'System' }}</td> 
                                         <td>
                                             <label class="switch_toggle"
                                                    for="active_checkbox{{@$value->id }}">

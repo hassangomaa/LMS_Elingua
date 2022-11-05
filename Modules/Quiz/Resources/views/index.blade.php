@@ -195,7 +195,7 @@
     </div>
     <input type="hidden" name="status_route" class="status_route" value="{{ route('coupons.status_update') }}">
 
-    {{-- @include('coupons::create') --}}
+      @include('coupons::create')  
     @include('backend.partials.delete_modal')
 @endsection
 @push('scripts')

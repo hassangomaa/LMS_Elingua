@@ -333,7 +333,7 @@
                         </div>
                     </div>
 
-                    {{-- Start setting  --}}
+                      Start setting   
                     <div class="row mt-40">
                         <div class="col-lg-12 d-flex">
                             <p class="text-uppercase fw-500 mb-10"
@@ -705,7 +705,7 @@
                         </div>
                     </div>
 
-                    {{-- Start setting  --}}
+                      Start setting   
 
 
                     <div class="row mt-40">

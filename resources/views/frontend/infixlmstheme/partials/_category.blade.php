@@ -7,7 +7,7 @@
                     <div class="menu_dropdown_iner d-flex pr-0">
                         <div class="single_menu_dropdown">
 
-{{--                            <h4>{{__('courses.Sub Category')}}</h4>--}}
+                             <h4>{{__('courses.Sub Category')}}</h4> 
                             <ul>
                                 @foreach( $category->childs as $child)
 

@@ -524,7 +524,7 @@ exports.test_data = {
             options: [
                 { name: "indent_handlebars", value: "true" }
             ],
-            content: '{{!-- comment--}}'
+            content: '{{!-- comment '
         }, {
             options: [
                 { name: "indent_handlebars", value: "true" }
@@ -539,12 +539,12 @@ exports.test_data = {
             options: [
                 { name: "indent_handlebars", value: "true" }
             ],
-            content: '{{!-- \n mult-line\ncomment  \n     with spacing\n--}}'
+            content: '{{!-- \n mult-line\ncomment  \n     with spacing\n '
         }, {
             options: [
                 { name: "indent_handlebars", value: "true" }
             ],
-            content: '{{!-- \n mult-line\ncomment \n{{#> component}}\n mult-line\ncomment  \n     with spacing\n {{/ component}}--}}'
+            content: '{{!-- \n mult-line\ncomment \n{{#> component}}\n mult-line\ncomment  \n     with spacing\n {{/ component}} '
         }, {
             options: [
                 { name: "indent_handlebars", value: "true" },

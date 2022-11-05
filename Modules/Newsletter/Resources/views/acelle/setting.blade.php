@@ -81,13 +81,13 @@
 
                                         </td>
                                     </tr>
-                                    {{-- <tr>
+                                      <tr>
                                         <td></td>
                                         <td>{{__('newsletter.The API key for connecting with your GetResponse account')}}.
                                             <a
                                                 href="https://app.getresponse.com/api" target="_blank">
                                                 {{__('newsletter.Get your API key here')}}.</a></td>
-                                    </tr> --}}
+                                    </tr>  
                                     <tr>
 
                                         <td colspan="2" class="text-center">

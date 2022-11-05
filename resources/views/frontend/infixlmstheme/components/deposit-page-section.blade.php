@@ -220,7 +220,7 @@
                                                                         @csrf
 
                                                                         <input type="hidden" name="email"
-                                                                               value="{{ @Auth::user()->email}}"> {{-- required --}}
+                                                                               value="{{ @Auth::user()->email}}">   required  
                                                                         <input type="hidden" name="orderID"
                                                                                value="{{md5(uniqid(rand(), true))}}">
                                                                         <input type="hidden" name="amount"
@@ -233,7 +233,7 @@
                                                                         <input type="hidden" name="metadata"
                                                                                value="{{ json_encode($array = ['type' => 'Deposit',]) }}">
                                                                         <input type="hidden" name="reference"
-                                                                               value="{{ Paystack::genTranxRef() }}"> {{-- required --}}
+                                                                               value="{{ Paystack::genTranxRef() }}">   required  
 
                                                                         <input type="hidden" name="method"
                                                                                value="{{$gateway->method}}">

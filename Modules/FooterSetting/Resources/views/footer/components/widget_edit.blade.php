@@ -67,10 +67,10 @@
                             <span class="text-danger">{{ $message }}</span>
                             @enderror
                         </div>
-                        {{--  <div class="col-md-12">
+                           <div class="col-md-12">
                               <textarea name="description" class="lms_summernote" id="widget_description"></textarea>
                           </div>
-                          --}}
+                           
 
 
                         <div id="editPageFieldDiv" class="col-lg-12 mt-30">

@@ -132,7 +132,7 @@
                             <th scope="col">{{__('common.Paid')}} {{__('payment.Amount')}}</th>
                             <th scope="col">  {{__('tax.TAX')}}</th>
                             <th scope="col">{{__('payment.Payment')}} {{__('payment.Method')}}</th>
-                            {{--                            <th scope="col">{{__('common.Status')}}</th>--}}
+                                                         <th scope="col">{{__('common.Status')}}</th> 
                         </tr>
                         </thead>
 

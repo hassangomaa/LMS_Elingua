@@ -6,7 +6,7 @@
                     <div class="section__title text-center mb_80">
 
                         <h3>
-                            {{@$homeContent->how_to_buy_title}}
+{{--                            {{@$homeContent->how_to_buy_title}}--}}
                         </h3>
                         <p>
                             {{@$homeContent->how_to_buy_sub_title}}
@@ -20,7 +20,7 @@
                         <a href="javascript:void(0)">
                             <div class="single_module text-center">
                                 <div class="icon">
-                                    <img src="{{asset($homeContent->how_to_buy_logo1)}}" alt="" style="max-width: 100%">
+{{--                                    <img src="{{asset($homeContent->how_to_buy_logo1)}}" alt="" style="max-width: 100%">--}}
                                 </div>
                                 <h3>
                                     {{@$homeContent->how_to_buy_title1}}
@@ -33,7 +33,7 @@
                         <a href="javascript:void(0)">
                             <div class="single_module text-center">
                                 <div class="icon">
-                                    <img src="{{asset($homeContent->how_to_buy_logo2)}}" alt="" style="max-width: 100%">
+{{--                                    <img src="{{asset($homeContent->how_to_buy_logo2)}}" alt="" style="max-width: 100%">--}}
                                 </div>
                                 <h3>
                                     {{@$homeContent->how_to_buy_title2}}
@@ -46,7 +46,7 @@
                         <a href="javascript:void(0)">
                             <div class="single_module text-center">
                                 <div class="icon">
-                                    <img src="{{asset($homeContent->how_to_buy_logo3)}}" alt="" style="max-width: 100%">
+{{--                                    <img src="{{asset($homeContent->how_to_buy_logo3)}}" alt="" style="max-width: 100%">--}}
                                 </div>
                                 <h3>
                                     {{@$homeContent->how_to_buy_title3}}
@@ -58,7 +58,7 @@
                         <a href="javascript:void(0)">
                             <div class="single_module text-center">
                                 <div class="icon">
-                                    <img src="{{asset($homeContent->how_to_buy_logo4)}}" alt=""
+{{--                                    <img src="{{asset($homeContent->how_to_buy_logo4)}}" alt=""--}}
                                          style="max-width: 100%">
                                 </div>
                                 <h3>

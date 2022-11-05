@@ -23,7 +23,7 @@
     </div>
 </div>
 
-{{--
+ 
 
 <div class="modal fade admin-query" id="deleteItem_{{@$item_id}}">
     <div class="modal-dialog modal_800px modal-dialog-centered">
@@ -45,4 +45,4 @@
             </div>
         </div>
     </div>
-</div> --}}
+</div>  

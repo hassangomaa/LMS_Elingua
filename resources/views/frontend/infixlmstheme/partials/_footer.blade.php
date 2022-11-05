@@ -7,7 +7,7 @@
     <div class="copyright_area">
         <div class="container">
             <div class="row">
-{{--                                @if(!isset($sectionWidgets) || (count($sectionWidgets['one'])==0 && count($sectionWidgets['two'])==0 && count($sectionWidgets['three'])==0 ) )--}}
+{{--                                 @if(!isset($sectionWidgets) || (count($sectionWidgets['one'])==0 && count($sectionWidgets['two'])==0 && count($sectionWidgets['three'])==0 ) ) --}}
 
                 <div class="col-xl-4 col-lg-4 col-md-6">
                     <div class="footer_widget">
@@ -46,7 +46,7 @@
         </div>
     </div>
 </footer>
-{{--<!-- FOOTER::END  -->--}}
+ <!-- FOOTER::END  -->
 
 <!-- Footer Start -->
 <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">

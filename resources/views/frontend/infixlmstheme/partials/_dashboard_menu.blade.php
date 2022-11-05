@@ -68,14 +68,14 @@
                     <a href="#" class="show_notify">
                         <div class="notify_icon">
                             <img src="{{asset('/public/frontend/infixlmstheme/')}}/img/svg/bell.svg" alt="">
-                            {{-- <i class="ti-bell"></i> --}}
+                              <i class="ti-bell"></i>  
                         </div>
                         <span class="notify_count">{{Auth::user()->unreadNotifications->count()}}</span>
                     </a>
                     <div class="notification_menu">
                         <ul>
                             @foreach (Auth::user()->unreadNotifications as $notification)
-                                {{-- @dd($notification->data['body']) --}}
+                                  @dd($notification->data['body'])  
                                 <li>
                                     <a href="#" class="unread_notification" title="Mark As Read" data-notification_id="{{$notification->id}}"> {{ \Illuminate\Support\Str::limit($notification->data['title'], 70, $end='...') }} </a>
                                 </li>

@@ -46,7 +46,7 @@
                                         <th scope="col">{{ __('common.Name') }}</th>
                                         <th scope="col">{{ __('setting.Code') }}</th>
                                         <th scope="col">{{ __('setting.Symbol') }}</th>
-{{--                                        <th scope="col">{{ __('setting.Conversion Rate') }}</th>--}}
+                                         <th scope="col">{{ __('setting.Conversion Rate') }}</th> 
                                         <th scope="col">{{ __('common.Action') }}</th>
                                     </tr>
                                     </thead>
@@ -57,7 +57,7 @@
                                             <td>{{ $currency->name }}</td>
                                             <td>{{ $currency->code }}</td>
                                             <td>{{ $currency->symbol }}</td>
-{{--                                            <td>{{ $currency->conversion_rate }}</td>--}}
+                                             <td>{{ $currency->conversion_rate }}</td> 
                                             <td>
                                                 <!-- shortby  -->
                                                 <div class="dropdown CRM_dropdown">

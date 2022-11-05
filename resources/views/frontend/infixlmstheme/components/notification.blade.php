@@ -10,7 +10,7 @@
                         </div>
                     </div>
                     <div class="col-12">
-                        {{-- @dd($all_notifications) --}}
+                          @dd($all_notifications)  
                         <div class="table-responsive">
                             @if(Auth::user()->notifications->count()==0)
                                 <div class="col-12">
@@ -30,7 +30,7 @@
                                     <tbody>
                                     @if($all_notifications)
                                         @foreach($all_notifications as $notification)
-                                        {{-- @dd($notification) --}}
+                                          @dd($notification)  
                                             @php
                                                 if($notification->read_at==null){
                                                     $start_tag='<b>';

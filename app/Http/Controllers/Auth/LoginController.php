@@ -391,7 +391,7 @@ class LoginController extends Controller
                             $login = UserLogin::where('user_id', Auth::id())->where('status', 1)->latest()->first();
                             if ($login) {
                                 $login->status = 0;
-                                $login->logout_at = Carbon::now(Settings('active_time_zone'));
+                                $login->logout_at = "";
                                 $login->save();
                             }
                         }
@@ -478,7 +478,7 @@ class LoginController extends Controller
             'os' => !empty(Browser::platformName()) ? Browser::platformName() : $request->os,
             'token' => \session()->getId(),
             'api_token' => !empty($request->api_token) ? $request->api_token : null,
-            'login_at' => Carbon::now(Settings('active_time_zone')),
+            'login_at' => "",
             'location' => Location::get($request->ip())
         ]);
         \session()->put('login_token', $login->token);
@@ -643,7 +643,7 @@ class LoginController extends Controller
                 $login = UserLogin::where('user_id', Auth::id())->where('status', 1)->latest()->first();
                 if ($login) {
                     $login->status = 0;
-                    $login->logout_at = Carbon::now(Settings('active_time_zone'));
+                    $login->logout_at = "";
                     $login->save();
                 }
             }

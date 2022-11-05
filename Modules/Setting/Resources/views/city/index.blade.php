@@ -157,7 +157,7 @@
                                     </div>
                                 </div>
                             </div>
-                            {{--                            <input type="hidden" name="page" value="{{isset($_GET['page'])?$_GET['page']:1}}">--}}
+                                                         <input type="hidden" name="page" value="{{isset($_GET['page'])?$_GET['page']:1}}"> 
                         </form>
                     </div>
                 </div>

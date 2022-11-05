@@ -123,14 +123,14 @@
                                 </div>
                             </div>
 
-{{--                            <div class="col-lg-6 opening_balance_div">--}}
-{{--                                <div class="primary_input mb-15">--}}
-{{--                                    <label class="primary_input_label" for="">{{__('common.Opening Balance')}}</label>--}}
-{{--                                    <input type="number" min="0" step="0.01" name="opening_balance" class="primary_input_field"--}}
-{{--                                           value="{{ $staff->opening_balance }}" readonly>--}}
-{{--                                    <span class="text-danger">{{$errors->first('opening_balance')}}</span>--}}
-{{--                                </div>--}}
-{{--                            </div>--}}
+                             <div class="col-lg-6 opening_balance_div"> 
+                                 <div class="primary_input mb-15"> 
+                                     <label class="primary_input_label" for="">{{__('common.Opening Balance')}}</label> 
+                                     <input type="number" min="0" step="0.01" name="opening_balance" class="primary_input_field" 
+                                            value="{{ $staff->opening_balance }}" readonly> 
+                                     <span class="text-danger">{{$errors->first('opening_balance')}}</span> 
+                                 </div> 
+                             </div> 
 
                             <div class="col-lg-6">
                                 <div class="primary_input mb-15">

@@ -6,14 +6,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Module Paytm</title>
 
-       {{-- Laravel Mix - CSS File --}}
-       {{-- <link rel="stylesheet" href="{{ mix('css/paytm.css') }}"> --}}
+         Laravel Mix - CSS File  
+         <link rel="stylesheet" href="{{ mix('css/paytm.css') }}">  
 
     </head>
     <body>
         @yield('content')
 
-        {{-- Laravel Mix - JS File --}}
-        {{-- <script src="{{ mix('js/paytm.js') }}"></script> --}}
+          Laravel Mix - JS File  
+          <script src="{{ mix('js/paytm.js') }}"></script>  
     </body>
 </html>

@@ -143,7 +143,7 @@
                                                         </div>
                                                     @endif
                                                 @else
-                                                    {{-- @dd($submitted_answers->where('question_id',$question->id)->first()) --}}
+                                                      @dd($submitted_answers->where('question_id',$question->id)->first())  
                                                     <div class="input-effect mb-20">
                                                         <label class="primary_input_label"> Answer <strong
                                                                 class="text-danger"></strong></label>

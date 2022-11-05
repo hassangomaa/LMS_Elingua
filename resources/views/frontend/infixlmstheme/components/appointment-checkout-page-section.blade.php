@@ -285,16 +285,16 @@
                         <li><b>{{ __('appointment.Service details') }}</b><span>{{ __('appointment.Price Per Hour') }}</span>
                         </li>
                         <li><b>{{ __('appointment.1 hour lesson') }}</b><span>{{ showPrice($instructor->hour_rate) }}</span></li>
-                        {{-- <li><b>{{ __('appointment.Transaction Fee') }}</b><span>$0.30</span></li>
+                          <li><b>{{ __('appointment.Transaction Fee') }}</b><span>$0.30</span></li>
                         <li><b class="jade-green">{{ __('appointment.You save') }}</b><span
                                 class="jade-green">$5.00</span></li>
                         <li><b>{{ __('appointment.Lesson Cancellation') }}</b><span class="jade-green">Free</span></li>
-                        <li><b>{{ __('appointment.Grand Total') }}</b><span>$12,000.00</span></li> --}}
+                        <li><b>{{ __('appointment.Grand Total') }}</b><span>$12,000.00</span></li>  
                     </ul>
                 </div>
             </div>
             <div class="bank_transfer">
-                {{-- <div class="bank_check">
+                  <div class="bank_check">
                     <label class="primary_bulet_checkbox d-inline-flex">
                         <input name="qus" checked="" type="checkbox">
                         <span class="checkmark mr_10"></span>
@@ -317,7 +317,7 @@
                         <span class="label_name">{{ __('appointment.PayPal') }}</span>
                         <img src="img/cart/paypal.png" alt="">
                     </label>
-                </div> --}}
+                </div>  
                 <p class="mb_35">
                     {{ __('appointment.Your personal data will be used to process your order, support your experience throughout this website, and for other purposes described in our privacy policy') }}.
                 </p>

@@ -37,7 +37,7 @@
                 <input type="hidden" name="is_quiz" value="1">
            
 
-                    {{-- <div class="input-effect mt-2 pt-1 mb-30">
+                      <div class="input-effect mt-2 pt-1 mb-30">
                            <div class="col-xl-6 ">
                             <div class="row">
                                 <div class="col-md-6">
@@ -63,14 +63,14 @@
                 <strong>{{ $errors->first('quiz') }}</strong>
             </span>
                     @endif
-                </div> --}}
+                </div>  
 
                 
                 @php
                     $online_exam=$editLesson->lessonQuiz;
                 @endphp
-                 {{-- @dd($online_exam) --}}
-                {{-- Start New Create --}}
+                   @dd($online_exam)  
+                  Start New Create  
              <div class="mt-20">
                 <div class="row">
                     <div class="col-lg-12">
@@ -127,7 +127,7 @@
                     </div>
                 </div>
              </div>
-                {{-- End New Create --}}
+                  End New Create  
                
             
             </div>

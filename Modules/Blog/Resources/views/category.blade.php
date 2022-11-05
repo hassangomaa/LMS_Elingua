@@ -186,7 +186,7 @@
                                         <tr>
                                             <td>{{++$key}}</td>
                                             <td>
-                                                {{--                                                {{checkParent($category)}}--}}
+                                                                                                 {{checkParent($category)}} 
                                                 {{@$category->title }}</td>
                                             <td>{{@$category->parent->title }}</td>
 

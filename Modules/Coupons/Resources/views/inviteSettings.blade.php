@@ -42,7 +42,7 @@
                                     <div class="row">
 
 
-                                        {{-- input title  --}}
+                                          input title   
                                         <div class="col-xl-12">
                                             <div class="primary_input mb-25">
                                                 <label class="primary_input_label"
@@ -61,7 +61,7 @@
                                             </div>
                                         </div>
 
-                                        {{-- input title  --}}
+                                          input title   
                                         <div class="col-xl-12">
                                             <div class="primary_input mb-25">
                                                 <label class="primary_input_label"

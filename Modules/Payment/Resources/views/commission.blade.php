@@ -390,7 +390,7 @@
                                                 </thead>
                                                 <tbody>
                                                 @foreach ($courses as $key => $course)
-                                                    {{-- @dd($instructor->name) --}}
+                                                      @dd($instructor->name)  
                                                     @php
                                                         $admin_commission=100-$course->special_commission;
                                                     @endphp

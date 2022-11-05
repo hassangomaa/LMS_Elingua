@@ -6,14 +6,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Module Razorpay</title>
 
-       {{-- Laravel Mix - CSS File --}}
-       {{-- <link rel="stylesheet" href="{{ mix('css/razorpay.css') }}"> --}}
+         Laravel Mix - CSS File  
+         <link rel="stylesheet" href="{{ mix('css/razorpay.css') }}">  
 
     </head>
     <body>
         @yield('content')
 
-        {{-- Laravel Mix - JS File --}}
-        {{-- <script src="{{ mix('js/razorpay.js') }}"></script> --}}
+          Laravel Mix - JS File  
+          <script src="{{ mix('js/razorpay.js') }}"></script>  
     </body>
 </html>

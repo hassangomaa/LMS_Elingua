@@ -147,11 +147,11 @@
     }
 
 </style>
-{{-- <div class="role_permission_wrap">
+  <div class="role_permission_wrap">
     <div class="permission_title">
         <h4>Assign Permission ({{@$role->name}})</h4>
     </div>
-</div> --}}
+</div>  
 @if (isset($editChapter))
     <div class="row" id="edit_chapter_section">
         <div class="col-lg-1"></div>
@@ -215,12 +215,12 @@
                             <i class="ti-move text-white"></i>
                             <label for="Main_Module_1" class="pl-10">{{@$chapter->name}}</label>
                         </div>
-                        {{-- <div class="arrow collapsed"  data-toggle="collapse" data-target="#Rolechapter_id{{$key}}"  aria-expanded="true"> --}}
+                          <div class="arrow collapsed"  data-toggle="collapse" data-target="#Rolechapter_id{{$key}}"  aria-expanded="true">  
                         <div class="mr-20 mt-1">
                             <a class="mr-20 chapter_icon"
                                href="{{url('admin/course/course-chapter-show/'.$course->id.'/'.$chapter->id)}}"> <i
                                     class="ti-pencil-alt"></i> </a>
-                            {{--                       <a class="mr-20 chapter_icon"  href="{{url('admin/course/delete-chapter/'.$chapter->id.'/'.$course->id)}}" > <i class="ti-trash"></i> </a>--}}
+                                                    <a class="mr-20 chapter_icon"  href="{{url('admin/course/delete-chapter/'.$chapter->id.'/'.$course->id)}}" > <i class="ti-trash"></i> </a> 
 
                             <a href="#" data-toggle="modal" data-target="#deleteChapter{{@$chapter->id}}"
                                class="mr-20 chapter_icon">
@@ -245,7 +245,7 @@
                                         </div>
                                         <div id="Rolechapter_id{{$key}}"
                                              class="collapse capter_body @if(isset($data['chapter_id']) && $data['chapter_id']==$chapter->id) show @endif">
-                                            {{-- start option head --}}
+                                              start option head  
 
                                             <div class="row d-flex mt-30 pl-20">
                                                 <div class="col-lg-2">
@@ -343,7 +343,7 @@
                                                 <div class="col-lg-1"></div>
 
                                             </div>
-                                            {{-- END ITEM SECTION --}}
+                                              END ITEM SECTION  
                                             <div class="permission_body nastable2" data-chapter="{{$chapter->id}}">
                                                 @foreach ($chapter->lessons as $key => $lesson)
                                                     @if ($key==0)
@@ -416,9 +416,9 @@
                                                                         </button>
                                                                         <div
                                                                             class="dropdown-menu dropdown-menu-right">
-                                                                            {{-- <a target="_blank"
+                                                                              <a target="_blank"
                                                                                href="{{$lesson->is_quiz==0?route('fullScreenView',[$course->id,$lesson->id]):route('quizStart',[$course->id,$lesson->quiz_id,$lesson->lessonQuiz->title])}}"
-                                                                               class="dropdown-item">{{__('common.View')}}</a> --}}
+                                                                               class="dropdown-item">{{__('common.View')}}</a>  
                                                                             <a target="_blank"
                                                                                href="{{route('fullScreenView',[$course->id,$lesson->id])}}"
                                                                                class="dropdown-item">{{__('common.View')}}</a>
@@ -462,7 +462,7 @@
                                                                                                        title="Delete"><i
                                                                                                             class="ti-trash"></i>
                                                                                                     </a>
-                                                                                                    {{-- <a href="{{url('quiz/online-exam-question-unassign/'.$course->id.'/'.$quiz->id.'/'.$assign->questionBank->id)}}" class="ml-10" title="Question Unassigned"><i class="ti-unlink"></i> </a> --}}
+                                                                                                      <a href="{{url('quiz/online-exam-question-unassign/'.$course->id.'/'.$quiz->id.'/'.$assign->questionBank->id)}}" class="ml-10" title="Question Unassigned"><i class="ti-unlink"></i> </a>  
                                                                                                 </div>
                                                                                             </td>
                                                                                         </tr>
@@ -471,11 +471,11 @@
                                                                             @else
                                                                                 <span>No Assigned Question</span>
                                                                             @endif
-                                                                            {{-- <ul>
+                                                                              <ul>
                                                                                 @foreach ($quiz->assign as $question_key => $assign)
                                                                                     <li>{{$question_key+1}}. {{$assign->questionBank->question}}</li>
                                                                                 @endforeach
-                                                                            </ul> --}}
+                                                                            </ul>  
                                                                         </div>
                                                                     </div>
 

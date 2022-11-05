@@ -333,11 +333,11 @@
                                                             @csrf
                                                             <input type="hidden"
                                                                    name="email"
-                                                                   value="{{ @Auth::user()->email}}"> {{-- required --}}
+                                                                   value="{{ @Auth::user()->email}}">   required  
 
                                                             <input type="hidden"
                                                                    name="amount"
-                                                                   value="{{ convertCurrency(Settings('currency_code') ??'BDT', Settings('currency_code'), 999)*100}}"> {{-- required in kobo --}}
+                                                                   value="{{ convertCurrency(Settings('currency_code') ??'BDT', Settings('currency_code'), 999)*100}}">   required in kobo  
 
                                                             <input type="hidden" name="currency"
                                                                    value="{{Settings('currency_code')}}">
@@ -347,7 +347,7 @@
                                                                    value="{{ json_encode($array = ['type' => 'Subscription',]) }}">
                                                             <input type="hidden"
                                                                    name="reference"
-                                                                   value="{{ Paystack::genTranxRef() }}"> {{-- required --}}
+                                                                   value="{{ Paystack::genTranxRef() }}">   required  
 
                                                             <input type="hidden"
                                                                    name="payment_method"

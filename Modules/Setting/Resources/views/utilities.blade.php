@@ -100,7 +100,7 @@
 
 
 
-    {{-- Reset Modal --}}
+      Reset Modal  
     <div class="modal fade admin-query" id="resetModal">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
@@ -143,7 +143,7 @@
     </div>
 
 
-    {{-- import database modal --}}
+      import database modal  
     <div class="modal fade admin-query" id="ImportDatabaseModal">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">

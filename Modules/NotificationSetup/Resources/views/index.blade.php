@@ -58,7 +58,7 @@
                     <div class="  QA_section QA_section_heading_custom check_box_table">
                         <div class="QA_table ">
                             <!-- table-responsive -->
-                            {{-- <form action="{{route('update_notification_setup')}}" id="frm-example" method="post"> --}}
+                              <form action="{{route('update_notification_setup')}}" id="frm-example" method="post">  
                             <form action="{{route('update_notification_setup')}}" name="notification_setup_form" id="notification_setup_form" method="POST">
 
                                 @csrf

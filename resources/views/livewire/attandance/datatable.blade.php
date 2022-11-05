@@ -93,7 +93,7 @@
         @php
             //@dump()
         @endphp
-        {{--        @dump($this->selectedRowsQuery->get(['id']))--}}
+                 @dump($this->selectedRowsQuery->get(['id'])) 
     </div>
     @push('js')
         <script>

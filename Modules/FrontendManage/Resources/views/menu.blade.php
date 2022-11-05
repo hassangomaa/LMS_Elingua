@@ -43,9 +43,9 @@
         @if (permissionCheck('frontend.testimonials'))
             <li><a href="{{ route('frontend.testimonials') }}"> {{ __('frontendmanage.Testimonials') }}</a></li>
         @endif
-        {{--        @if (permissionCheck('frontend.sectionSetting'))--}}
-        {{--            <li><a href="{{ route('frontend.sectionSetting') }}"> {{ __('frontendmanage.Section Setting') }}</a></li>--}}
-        {{--        @endif--}}
+                 @if (permissionCheck('frontend.sectionSetting')) 
+                     <li><a href="{{ route('frontend.sectionSetting') }}"> {{ __('frontendmanage.Section Setting') }}</a></li> 
+                 @endif 
         @if (permissionCheck('frontend.socialSetting'))
             <li><a href="{{ route('frontend.socialSetting') }}"> {{ __('frontendmanage.Social Setting') }}</a></li>
         @endif
@@ -75,11 +75,11 @@
             </li>
         @endif
 
-{{--        @if(permissionCheck('footerSetting.footer.index'))--}}
-{{--            <li>--}}
-{{--                <a href="{{route('footerSetting.footer.index')}}">{{ __('setting.Footer Setting') }}</a>--}}
-{{--            </li>--}}
-{{--        @endif--}}
+         @if(permissionCheck('footerSetting.footer.index')) 
+             <li> 
+                 <a href="{{route('footerSetting.footer.index')}}">{{ __('setting.Footer Setting') }}</a> 
+             </li> 
+         @endif 
 
 
         @if(permissionCheck('frontend.loginpage.index'))

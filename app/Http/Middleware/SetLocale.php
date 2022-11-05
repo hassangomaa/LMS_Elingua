@@ -17,18 +17,19 @@ class SetLocale
      */
     public function handle($request, Closure $next)
     {
-        if (Auth::check()) {
-            $user = Auth::user();
-            $lang = $user->language_code ?? 'en';
-        } else {
-            if (session()->get('locale')) {
-                $lang = session()->get('locale') ?? 'en';
-            } else {
-                $lang =Settings('language_code') ?? 'en';
-            }
-        }
+//        if (Auth::check()) {
+//            $user = Auth::user();
+//            $lang = $user->language_code ?? 'en';
+//        } else {
+//            if (session()->get('locale')) {
+//                $lang = session()->get('locale') ?? 'en';
+//            } else {
+//                $lang =Settings('language_code') ?? 'en';
+//            }
+//        }
 
-        App::setLocale($lang);
+//        App::setLocale($lang);
+        App::setLocale("ar");
         return $next($request);
     }
 }

@@ -102,7 +102,7 @@
                                                             <i class="ti-close "></i>
                                                         </button>
                                                     </div>
-                                                    {{-- <input type="hidden" id="url" value="{{url('/')}}"> --}}
+                                                      <input type="hidden" id="url" value="{{url('/')}}">  
                                                     <div class="modal-body  student-details header-menu">
                                                         <form action="{{route('frontend.workProcessUpdate')}}"
                                                               method="POST"
@@ -190,7 +190,7 @@
                         </div>
                     </div>
                 </div>
-                {{-- @dd(Auth::user()) --}}
+                  @dd(Auth::user())  
                 <div class="modal fade admin-query" id="add_topic">
                     <div class="modal-dialog modal_1000px modal-dialog-centered">
                         <div class="modal-content">

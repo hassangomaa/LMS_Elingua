@@ -60,7 +60,7 @@
 
             <div class="col-xl-6">
                 <div class="primary_input mb-25">
-                    {{-- <input type="hidden" name="types[]" value="MAIL_PASSWORD"> --}}
+                      <input type="hidden" name="types[]" value="MAIL_PASSWORD">  
                     <label class="primary_input_label" for="">{{ __('setting.Mail Password') }}</label>
                     <input class="primary_input_field" placeholder="-" type="text" name="mail_password"
                            value="{{@$smtp_mail_setting->mail_password}}">

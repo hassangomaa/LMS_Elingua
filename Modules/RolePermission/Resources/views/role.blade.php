@@ -60,7 +60,7 @@
                                                             @endif
                                                         @endif
                                                     </td>
-                                                    {{-- Error modal message --}}
+                                                      Error modal message  
                                                     @include('backend.partials.deleteModalMessage',[
                                                         'item_id' => @$role->id,
                                                         'item_name' => 'Role',

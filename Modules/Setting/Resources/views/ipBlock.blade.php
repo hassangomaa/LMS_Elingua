@@ -37,7 +37,7 @@
                                     <th scope="col">{{__('common.SL')}} </th>
                                     <th scope="col"> {{__('common.Name')}} </th>
                                     <th scope="col">{{__('dashboard.Subjects')}}</th>
-                                    {{--                                    <th scope="col">{{__('common.Status')}}</th>--}}
+                                                                         <th scope="col">{{__('common.Status')}}</th> 
                                     <th scope="col">{{__('common.Action')}}</th>
                                 </tr>
                                 </thead>

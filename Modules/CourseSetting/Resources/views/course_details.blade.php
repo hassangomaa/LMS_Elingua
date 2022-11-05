@@ -196,7 +196,7 @@
                                                     <div class="col-md-12">
                                                         <div class="nastable">
 
-                                                            {{-- Start Udemy Design --}}
+                                                              Start Udemy Design  
                                                             <style>
                                                                 .add-item-forms--inline-menu--1OTdc {
                                                                     margin-bottom: -25px;
@@ -324,12 +324,12 @@
 
                                                             </div>
 
-                                                            {{-- START CHAPTER --}}
+                                                              START CHAPTER  
 
                                                             @include('coursesetting::parts_of_course_details.chapter_list')
 
-                                                            {{-- END CHAPTER --}}
-                                                            {{-- End Udemy Design --}}
+                                                              END CHAPTER  
+                                                              End Udemy Design  
                                                         </div>
 
                                                     </div>
@@ -789,7 +789,7 @@
                                                                                name="is_free"
                                                                                @if ($course->price==0) checked
                                                                                @endif value="1">
-                                                                        {{-- <input type="checkbox" class="edit_course_2" id="edit_course_2" name="is_free" @if ($course->price==0) checked @endif value="1"> --}}
+                                                                          <input type="checkbox" class="edit_course_2" id="edit_course_2" name="is_free" @if ($course->price==0) checked @endif value="1">  
                                                                         <i class="slider round"></i>
                                                                     </label>
                                                                     <label
@@ -1115,17 +1115,17 @@
                                                                             </option>
                                                                             <option value="{{$course->trailer_link}}"
                                                                                     selected></option>
-                                                                            {{--                                                                            @foreach ($vdocipher_list as $vdo)--}}
-                                                                            {{--                                                                                @if(isset($editLesson))--}}
-                                                                            {{--                                                                                    <option--}}
-                                                                            {{--                                                                                        value="{{@$vdo->id}}" {{$vdo->id==$editLesson->video_url?'selected':''}}>{{@$vdo->title}}</option>--}}
-                                                                            {{--                                                                                @else--}}
-                                                                            {{--                                                                                    <option--}}
-                                                                            {{--                                                                                        value="{{@$vdo->id}}">{{@$vdo->title}}</option>--}}
-                                                                            {{--                                                                                @endif--}}
+                                                                                                                                                         @foreach ($vdocipher_list as $vdo) 
+                                                                                                                                                             @if(isset($editLesson)) 
+                                                                                                                                                                 <option 
+                                                                                                                                                                     value="{{@$vdo->id}}" {{$vdo->id==$editLesson->video_url?'selected':''}}>{{@$vdo->title}}</option> 
+                                                                                                                                                             @else 
+                                                                                                                                                                 <option 
+                                                                                                                                                                     value="{{@$vdo->id}}">{{@$vdo->title}}</option> 
+                                                                                                                                                             @endif 
 
 
-                                                                            {{--                                                                            @endforeach--}}
+                                                                                                                                                         @endforeach 
                                                                         </select>
                                                                         @if ($errors->has('vdocipher'))
                                                                             <span
@@ -1309,7 +1309,7 @@
                                                                 <div class="row">
                                                                     <div class="col-xl-12 mt-20">
                                                                         <div class="primary_input">
-                                                                            {{-- <label class="primary_input_label mt-1" for=""> {{__('common.Name')}} </label> --}}
+                                                                              <label class="primary_input_label mt-1" for=""> {{__('common.Name')}} </label>  
                                                                             <input class="primary_input_field"
                                                                                    name="fileName" value="" required
                                                                                    placeholder="{{__('common.File')}} {{__('common.Name')}} *"

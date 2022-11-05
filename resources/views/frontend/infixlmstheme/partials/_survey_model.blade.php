@@ -133,7 +133,7 @@
                                                                     </div>
                                                                 @endif
                                                             @else
-                                                                {{-- @dd($submitted_answers->where('question_id',$question->id)->first()) --}}
+                                                                  @dd($submitted_answers->where('question_id',$question->id)->first())  
                                                                 <div class="input-effect mb-20">
                                                                     <label
                                                                         class="primary_input_label"> {{__('common.Answer')}}
@@ -143,7 +143,7 @@
                                                                               rows="10"
                                                                               name="survey_answer[{{$question->id}}]">
 
-{{--                                                    {{$submitted_answers->where('question_id',$question->id)->first() ? $submitted_answers->where('question_id',$question->id)->first()->answer:''}}--}}
+                                                     {{$submitted_answers->where('question_id',$question->id)->first() ? $submitted_answers->where('question_id',$question->id)->first()->answer:''}} 
                                                 </textarea>
                                                                     <span class="focus-border textarea"></span>
 

@@ -22,7 +22,7 @@
                 <div class="col-12">
                     <div class="box_header">
                         <div class="main-title d-flex">
-                            {{-- <h3 class="mb-0 mr-30" >{{ __('setting.Settings') }}</h3> --}}
+                              <h3 class="mb-0 mr-30" >{{ __('setting.Settings') }}</h3>  
                         </div>
                     </div>
                 </div>

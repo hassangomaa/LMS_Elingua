@@ -23,7 +23,7 @@
     <script src="{{asset('Modules/Calendar/Resources/assets/js')}}/frontend/calender_js/interaction/main.js"></script>
     <script src="{{asset('Modules/Calendar/Resources/assets/js')}}/frontend/calender_js/list/main.js"></script>
 
-    {{-- <script src="{{asset('Modules/Calendar/Resources/assets/js')}}/frontend/calender_js/activation.js"></script> --}}
+      <script src="{{asset('Modules/Calendar/Resources/assets/js')}}/frontend/calender_js/activation.js"></script>  
     
 <script>
     // fc-timeGridWeek-button

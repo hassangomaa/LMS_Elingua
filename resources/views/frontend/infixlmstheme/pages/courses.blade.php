@@ -7,8 +7,8 @@
 @endsection
 @section('mainContent')
 
-    <x-breadcrumb :banner="$frontendContent->course_page_banner" :title="$frontendContent->course_page_title"
-                  :subTitle="$frontendContent->course_page_sub_title"/>
+{{--    <x-breadcrumb :banner="$frontendContent->course_page_banner" :title="$frontendContent->course_page_title"--}}
+{{--                  :subTitle="$frontendContent->course_page_sub_title"/>--}}
 
     <x-course-page-section :request="$request" :categories="$categories" :languages="$languages"/>
 @endsection

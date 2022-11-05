@@ -66,7 +66,7 @@
     </div>
 
 
-{{-- @include('frontend.partials.footer_content') --}}
+  @include('frontend.partials.footer_content')  
 </section>
 <!-- main content part end -->
 @endsection

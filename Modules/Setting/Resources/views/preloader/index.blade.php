@@ -715,7 +715,7 @@
                                                                                     </div>
                                                                                 </label>
                                                                             </div>
-{{--
+ 
                                                                             <div class="col-md-2">
                                                                                 <input type="radio"
                                                                                        id="checkbox24"
@@ -738,7 +738,7 @@
                                                                                     </div>
                                                                                 </label>
                                                                             </div>
-                                                                             --}}
+                                                                              
 
                                                                         </div>
 

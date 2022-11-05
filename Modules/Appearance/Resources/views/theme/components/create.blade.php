@@ -51,7 +51,7 @@
 
 @endsection
 @push('scripts')
-    {{--    <script src="{{asset('Modules/Appearance/Resources/assets/js/script.js')}}"></script>--}}
+         <script src="{{asset('Modules/Appearance/Resources/assets/js/script.js')}}"></script> 
     <script>
         function getFileName(value, placeholder) {
             if (value) {

@@ -103,7 +103,7 @@
                     @endif
                 </div>
 
-                {{-- Start New Create --}}
+                  Start New Create  
              <div class="new_quiz mt-20" style="display: none">
                 <div class="row" style="visibility: hidden">
                     <div class="col-lg-12">
@@ -171,7 +171,7 @@
                     </div>
                 </div>
              </div>
-                {{-- End New Create --}}
+                  End New Create  
                 @push('js')
                     <script>
                         $(".quiz_div input[name='type']").click(function(){

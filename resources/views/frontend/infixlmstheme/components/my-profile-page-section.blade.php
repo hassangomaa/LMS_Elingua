@@ -6,9 +6,9 @@
                     <!-- account_profile_wrapper  -->
                     <div class="account_profile_wrapper">
                         <div class="account_profile_thumb text-center mb_30">
-                            {{-- <div class="thumb">
+                              <div class="thumb">
                                 <img src="{{getProfileImage($profile->image)}}" alt="">
-                            </div> --}}
+                            </div>  
                             <x-student-profile-image-update :profile="$profile"/>
                             <h4>{{$profile->name}}</h4>
                             <p>{{$profile->headline}}</p>

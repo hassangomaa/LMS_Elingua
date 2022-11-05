@@ -73,8 +73,8 @@
                                        for="type">{{__('courses.Course')}} {{__('common.Type')}}</label>
                                 <select class="primary_select" name="type"
                                         id="type">
-                                    {{--                                    <option data-display="{{__('common.Select')}} {{__('common.Type')}}"--}}
-                                    {{--                                            value="">{{__('common.Select')}} {{__('courses.Type')}}</option>--}}
+                                                                         <option data-display="{{__('common.Select')}} {{__('common.Type')}}" 
+                                                                                 value="">{{__('common.Select')}} {{__('courses.Type')}}</option> 
                                     <option
                                         value="1" {{request()->get('type')=="1"?'selected':''}}>{{__('courses.Course')}} </option>
                                     <option

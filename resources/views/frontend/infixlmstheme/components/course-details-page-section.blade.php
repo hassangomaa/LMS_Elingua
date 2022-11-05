@@ -236,7 +236,7 @@
                                                                                                 <span
                                                                                                     onclick="goFullScreen({{$course->id}},{{$lesson->id}})"
                                                                                                     class="quizLink active"
-{{--                                                                                                    data-url="{{route('quizStart',[$course->id,$quiz->id,$quiz->title])}}"--}}
+                                                                                                     data-url="{{route('quizStart',[$course->id,$quiz->id,$quiz->title])}}" 
                                                                                                 >
                                                                     <i class="ti-check-box"></i>
                                                                     <span
@@ -283,13 +283,13 @@
                                                                                             <span
                                                                                                 onclick="goFullScreen({{$course->id}},{{$lesson->id}})"
                                                                                                 class="quizLink active"
-{{--                                                                                                data-url="{{route('quizStart',[$course->id,$quiz->id,$quiz->title])}}"--}}
+                                                                                                 data-url="{{route('quizStart',[$course->id,$quiz->id,$quiz->title])}}" 
                                                                                             >
                                                                   <i class="ti-check-box"></i>
                                                         <span
                                                             class="quiz_name">{{@$key+1}} {{@$quiz->title}} [Quiz]</span>
                                                         </span>
-                                                                                            {{--                                                        <span class="quiz_name">{{@$key+1}} {{@$quiz->title}} [Quiz]</span>--}}
+                                                                                                                                                     <span class="quiz_name">{{@$key+1}} {{@$quiz->title}} [Quiz]</span> 
                                                                                         @else
                                                                                             <i class="ti-check-box"></i>
                                                                                             <span
@@ -326,7 +326,7 @@
                                                                             @if ($lesson->is_lock==0)
                                                                                 @if ($lesson->is_quiz==0)
                                                                                     <a href="#"
-                                                                                       {{--                                                                                   class="theme_btn_lite course_play_name"--}}
+                                                                                                                                                                           class="theme_btn_lite course_play_name" 
                                                                                        data-course="{{$course->id}}"
                                                                                        data-lesson="{{$lesson->id}}"
                                                                                        class="theme_btn_lite goFullScreen"
@@ -335,7 +335,7 @@
                                                                                     <a href="#"
                                                                                        class="theme_btn_lite quizLink"
                                                                                        onclick="goFullScreen({{$course->id}},{{$lesson->id}})"
-                                                                                        {{--                                                                                       data-url="{{route('quizStart',[$course->id,$quiz->id,$quiz->title])}}"--}}
+                                                                                                                                                                                data-url="{{route('quizStart',[$course->id,$quiz->id,$quiz->title])}}" 
                                                                                     >{{__('frontend.Start')}}</a>
                                                                                 @endif
 
@@ -351,7 +351,7 @@
                                                                                         <a href="#"
                                                                                            onclick="goFullScreen({{$course->id}},{{$lesson->id}})"
                                                                                            class="theme_btn_lite quizLink"
-                                                                                            {{--                                                                                           data-url="{{route('quizStart',[$course->id,$quiz->id,$quiz->title])}}"--}}
+                                                                                                                                                                                        data-url="{{route('quizStart',[$course->id,$quiz->id,$quiz->title])}}" 
                                                                                         >{{__('frontend.Start')}}</a>
                                                                                     @endif
 

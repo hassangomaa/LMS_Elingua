@@ -1,20 +1,13 @@
-<?php
-    $totalMessage =totalUnreadMessages();
-?>
+
 <div class="container-fluid no-gutters" id="main-nav-for-chat">
     <div class="row">
         <div class="col-lg-12 p-0">
             <div class="header_iner d-flex justify-content-between align-items-center">
-                <?php
-                    $LanguageList = getLanguageList();
-                    $path =asset(Settings('logo') );
-                    $type = pathinfo($path, PATHINFO_EXTENSION);
-                    try {
-                        $data = file_get_contents($path);
-                    }catch (\Exception $e){
-                        $data='';
-                    }
-                ?>
+
+                <?php echo e($path =asset(Settings('logo') )); ?>
+
+                <?php echo e($data = file_get_contents($path)); ?>
+
                 <input type="hidden" id="logo_img" value="<?php echo e(base64_encode($data)); ?>">
                 <input type="hidden" id="logo_title" value="<?php echo e(Settings('company_name')); ?>">
                 <div class="small_logo_crm d-lg-none">
@@ -52,27 +45,27 @@
                 </div>
 
                 <div class="header_right d-flex justify-content-between align-items-center">
-                    <?php if(Settings('language_translation') == 1): ?>
-                        <div class="select_style d-flex">
-                            <select name="code" id="language_code" class="nice_Select bgLess mb-0 menuLangChanger"
-                                    onchange="location = this.value;">
-                                <?php $__currentLoopData = $LanguageList; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $key => $language): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-                                    <option value="<?php echo e(route('changeLanguage',$language->code)); ?>"
-                                            <?php if(\Illuminate\Support\Facades\Auth::user()->language_code == $language->code): ?> selected <?php endif; ?>><?php echo e($language->native); ?></option>
 
-                                <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
-                            </select>
-                        </div>
-                    <?php endif; ?>
+
+
+
+
+
+
+
+
+
+
+
                     <ul class="header_notification_warp d-flex align-items-center">
-                        
+                          Start Notification
                         <li class="scroll_notification_list">
                             <a class="pulse theme_color bell_notification_clicker show_notifications" href="#">
                                 <!-- bell   -->
                                 <i class="fa fa-bell"></i>
 
                                 <!--/ bell   -->
-                                <span class="notification_count"><?php echo e(Auth::user()->unreadNotifications->count()); ?></span>
+
                                 <span class="pulse-ring notification_count_pulse"></span>
                             </a>
                             <!-- Menu_NOtification_Wrap  -->
@@ -82,23 +75,23 @@
                                 </div>
                                 <div class="Notification_body">
                                     <!-- single_notify  -->
-                                    <?php $__empty_1 = true; $__currentLoopData = Auth::user()->unreadNotifications; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $notification): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); $__empty_1 = false; ?>
-                                        <div class="single_notify d-flex align-items-center"
-                                             id="menu_notification_show_<?php echo e($notification->id); ?>">
-                                            <div class="notify_thumb">
-                                                <i class="fa fa-bell"></i>
-                                            </div>
-                                            <a href="#" class="unread_notification" title="Mark As Read"
-                                               data-notification_id="<?php echo e($notification->id); ?>">
-                                                <div class="notify_content">
-                                                    <h5><?php echo strip_tags(\Illuminate\Support\Str::limit(@$notification->data['title'], 30, $end='...')); ?></h5>
-                                                    <p><?php echo strip_tags(\Illuminate\Support\Str::limit(@$notification->data['body'], 70, $end='...')); ?></p>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); if ($__empty_1): ?>
-                                        <span class="text-center"><?php echo e(__('common.No Unread Notification')); ?></span>
-                                    <?php endif; ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
                                 </div>
                                 <div class="nofity_footer">
@@ -112,43 +105,43 @@
                             </div>
                             <!--/ Menu_NOtification_Wrap  -->
                         </li>
-                        
-                        <?php if(permissionCheck('communication.PrivateMessage')): ?>
-                            <li class="scroll_notification_list">
-                                <a class="pulse theme_color"
-                                   href="<?php echo e(route('communication.PrivateMessage')); ?>">
-                                    <!-- bell   -->
-                                    <i class="far fa-comment"></i>
-                                    <span class="notification_count"><?php echo e($totalMessage); ?>  </span>
-                                    <?php if($totalMessage>0): ?>
-                                        <span class="pulse-ring notification_count_pulse"></span>
-                                    <?php endif; ?>
-                                </a>
-                            </li>
-                        <?php endif; ?>
+                          End Notification
 
-                        <?php if(isModuleActive('Chat')): ?>
-                            <li class="scroll_notification_list">
-                                <?php if(env('BROADCAST_DRIVER') == null): ?>
-                                    <jquery-notification-component
-                                        :loaded_unreads="<?php echo e(json_encode($notifications_for_chat)); ?>"
-                                        :user_id="<?php echo e(json_encode(auth()->id())); ?>"
-                                        :redirect_url="<?php echo e(json_encode(route('chat.index'))); ?>"
-                                        :check_new_notification_url="<?php echo e(json_encode(route('chat.notification.check'))); ?>"
-                                        :asset_type="<?php echo e(json_encode('/public')); ?>"
-                                        :mark_all_as_read_url="<?php echo e(json_encode(route('chat.notification.allRead'))); ?>"
-                                    ></jquery-notification-component>
-                                <?php else: ?>
-                                    <notification-component
-                                        :loaded_unreads="<?php echo e(json_encode($notifications_for_chat)); ?>"
-                                        :user_id="<?php echo e(json_encode(auth()->id())); ?>"
-                                        :redirect_url="<?php echo e(json_encode(route('chat.index'))); ?>"
-                                        :asset_type="<?php echo e(json_encode('/public')); ?>"
-                                        :mark_all_as_read_url="<?php echo e(json_encode(route('chat.notification.allRead'))); ?>"
-                                    ></notification-component>
-                                <?php endif; ?>
-                            </li>
-                        <?php endif; ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
                     </ul>
                     <div class="profile_info">

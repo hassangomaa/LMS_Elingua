@@ -68,7 +68,7 @@
             @endif
 
                 @if(isModuleActive('Appointment'))
-                    {{-- @if(permissionCheck('myAppointment')) --}}
+                      @if(permissionCheck('myAppointment'))  
                     <li>
                         <a href="{{route('myAppointment')}}"
                            class=" d-flex align-items-center {{ routeIs('myAppointment')  ? 'active' : '' }}">
@@ -88,7 +88,7 @@
                             <span>{{__('appointment.My WishList')}}</span>
                         </a>
                     </li>
-                    {{-- @endif --}}
+                      @endif  
                 @endif
             @if (isModuleActive('Org'))
                 <li>

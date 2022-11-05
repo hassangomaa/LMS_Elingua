@@ -1,4 +1,4 @@
-{{--
+ 
 <div class="col-md-6 col-lg-4 col-xl-4">
     <div class="single_instractor mb_30">
         <a href="instractor-details.php" class="thumb">
@@ -9,4 +9,4 @@
             <span>Exmouth, United Kingdom</span>
         </div>
     </div>
-</div>--}}
+</div> 

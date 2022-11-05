@@ -113,7 +113,7 @@
             </div>
         </div>
 
-        {{-- Delete Modal End --}}
+          Delete Modal End  
     </section>
     @push('scripts')
 

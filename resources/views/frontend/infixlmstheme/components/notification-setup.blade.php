@@ -21,7 +21,7 @@
                         }
                     </style>
                     <div class="col-12">
-                        {{-- @dd($all_notifications) --}}
+                          @dd($all_notifications)  
                         <form action="{{route('update_notification_setup')}}" name="notification_setup_form" id="notification_setup_form" method="POST">
 
                                     @csrf

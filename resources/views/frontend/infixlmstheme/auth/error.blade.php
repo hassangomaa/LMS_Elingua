@@ -42,7 +42,7 @@
 
 
     <script src="{{asset('public/backend/')}}/vendors/js/jquery-3.5.1.min.js"></script>
-{{--    <script src="{{asset('public/backend/')}}/vendors/js/jquery-3.2.1.min.js"></script>--}}
+     <script src="{{asset('public/backend/')}}/vendors/js/jquery-3.2.1.min.js"></script> 
     <script src="{{asset('public/backend/')}}/vendors/js/popper.js"></script>
 	<script src="{{asset('public/backend/')}}/vendors/js/bootstrap.min.js"></script>
 	<script>

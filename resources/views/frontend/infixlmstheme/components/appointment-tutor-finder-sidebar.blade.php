@@ -24,7 +24,7 @@
             <h5 class="font_16 f_w_500 mb-0">{{ __('frontend.Filter Category') }}</h5>
         </div>
         <div class="course_category_inner mb_30">
-            {{-- category --}}
+              category  
             <div class="single_course_categry">
                 <h4 class="font_18 f_w_700">
                     {{ __('frontend.Category') }}
@@ -48,7 +48,7 @@
 
                 </ul>
             </div>
-            {{-- level --}}
+              level  
             <div class="single_course_categry">
                 <h4 class="font_18 f_w_700">
                     {{ __('frontend.Level') }}
@@ -70,7 +70,7 @@
 
                 </ul>
             </div>
-            {{-- gender --}}
+              gender  
             <div class="single_course_categry">
                 <h4 class="font_18 f_w_700">
                     {{ __('common.Gender') }}
@@ -92,17 +92,17 @@
 
                 </ul>
             </div>
-            {{-- price range --}}
+              price range  
             <div class="single_course_categry">
                 <label for="#">{{ __('appointment.Price Range') }}</label>
                 <input class="category-item-price price_range" name="price_range" id='price_range' />
             </div>
-             {{-- age range --}}
+               age range  
             <div class="single_course_categry">
                 <label for="#">{{ __('appointment.Instructor Age') }}</label>
                 <input class="category-item-price age_range" name="age_range" id='instructor_age' />
             </div>
-            {{-- week days --}}
+              week days  
             <div class="single_course_categry">
                 <h4 class="font_18 f_w_700">
                     {{ __('appointment.Available Day') }}
@@ -139,7 +139,7 @@
                     @endforeach
                 </select>
             </div>
-            {{-- <div class="category-item">
+              <div class="category-item">
                 <label for="#">Province</label>
                 <select name="province_id" class="category-item-input" disabled="">
                     <option value="">Select Province</option>
@@ -156,7 +156,7 @@
                 <select name="district_id" class="category-item-input district" disabled="">
                     <option value="">Select District</option>
                 </select>
-            </div> --}}
+            </div>  
         </div>
     </div>
 </div>

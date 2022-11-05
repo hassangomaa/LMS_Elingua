@@ -1,7 +1,7 @@
 
                            
 
-                                {{-- @dd($editLesson) --}}
+                                  @dd($editLesson)  
                                 <div class="mt-20 ">
                                     @if (isset($edit))
                                         <form action="{{route('course_assignment_update')}}" method="POST" id="coupon-form" name="coupon-form" enctype="multipart/form-data">
@@ -18,7 +18,7 @@
                                                 <input type="hidden" name="assignment_from" value="2">
                                                 <div class="row">
     
-                                                    {{-- input title  --}}
+                                                      input title   
                                                     <div class="col-xl-12">
                                                         <div class="primary_input mb-25">
                                                             <label class="primary_input_label"
@@ -40,7 +40,7 @@
                                                 </div>
                                                 <div class="row">
     
-                                                    {{-- input marks  --}}
+                                                      input marks   
                                                     <div class="col-xl-6">
                                                         <div class="primary_input mb-25">
                                                             <label class="primary_input_label"
@@ -60,7 +60,7 @@
                                                         </div>
                                                     </div>
     
-                                                    {{-- input Amount  --}}
+                                                      input Amount   
                                                     <div class="col-xl-6">
                                                         <div class="primary_input mb-25">
                                                             <label class="primary_input_label"
@@ -83,7 +83,7 @@
                                                 </div>
                                                     <div class="row">
     
-                                                    {{-- input Amount  --}}
+                                                      input Amount   
                                                     <div class="col-xl-6">
                                                         <div class="primary_input mb-35">
                                                             <label class="primary_input_label" for="">{{__('assignment.Attachment')}}
@@ -102,7 +102,7 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    {{-- Start Date Input --}}
+                                                      Start Date Input  
                                                     <div class="col-xl-6">
                                                         <div class="primary_input mb-15">
                                                             <label class="primary_input_label"
@@ -135,7 +135,7 @@
                                                 </div>
                                                 <div class="row">
     
-                                                    {{-- End Date Input --}}
+                                                      End Date Input  
                                                     <div class="col-lg-12">
                                                         <div class="input-effect">
                                                             <label class="primary_input_label"> {{__('assignment.Description')}} *</label>

@@ -224,15 +224,15 @@
                                     </tr>
                                     </thead>
                                     <tbody>
-                                        {{-- @dd($packges) --}}
+                                          @dd($packges)  
                                     @foreach($packges as $key => $packge)
-                                    {{-- @dd($packge->courses) --}}
+                                      @dd($packge->courses)  
                                             <tr>
                                                 <td>{{@$packge->name }}</td>
                                                 <td>
 
                                                     @if (@$packge->type==0)
-                                                        {{-- {{@$packge->courses->count()}} --}}
+                                                          {{@$packge->courses->count()}}  
                                                     @else
                                                         {{@$packge->typeName }} {{@$packge->validity }}
                                                     @endif
@@ -314,7 +314,7 @@
 
     </div>
 
-{{-- @include('coupons::create') --}}
+  @include('coupons::create')  
 @include('backend.partials.delete_modal')
 @endsection
 @push('scripts')

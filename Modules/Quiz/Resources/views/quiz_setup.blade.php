@@ -190,7 +190,7 @@
 
     </div>
 
-    {{-- @include('coupons::create') --}}
+      @include('coupons::create')  
     @include('backend.partials.delete_modal')
 @endsection
 @push('scripts')

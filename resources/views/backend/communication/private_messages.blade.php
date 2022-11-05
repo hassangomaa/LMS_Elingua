@@ -47,7 +47,7 @@
                                                              style="background-image: url('{{getProfileImage($user->image)}}')">
 
                                                         </div>
-{{--                                                        <img src="{{url($user->image)}}" alt="">--}}
+                                                         <img src="{{url($user->image)}}" alt=""> 
                                                     </div>
                                                     <div class="messges_info">
                                                         <h4 id="receiver_name{{$user->id}}">{{$user->name}}</h4>

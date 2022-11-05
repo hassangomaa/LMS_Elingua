@@ -1,7 +1,7 @@
 <div>
 
 
-    @if($homeContent->show_banner_section==1)
+    @if(1)
         <form action="{{route('search')}}">
             <div class="banner_area"
                  @if(isset($homeContent->slider_banner) && !empty($homeContent->slider_banner))

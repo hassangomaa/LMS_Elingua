@@ -1033,12 +1033,12 @@
                                         <a href="#"
                                            class="theme_btn d-block text-center height_50 mb_10">{{__('common.Already Enrolled')}}</a>
 
-                                        {{--                                        @if($certificateCanDownload)--}}
-                                        {{--                                            <a href="{{route('getCertificate',[$course->id,$course->title])}}"--}}
-                                        {{--                                               class="theme_line_btn d-block text-center height_50 mb_10">--}}
-                                        {{--                                                {{__('frontend.Get Certificate')}}--}}
-                                        {{--                                            </a>--}}
-                                        {{--                                        @endif--}}
+                                                                                 @if($certificateCanDownload) 
+                                                                                     <a href="{{route('getCertificate',[$course->id,$course->title])}}" 
+                                                                                        class="theme_line_btn d-block text-center height_50 mb_10"> 
+                                                                                         {{__('frontend.Get Certificate')}} 
+                                                                                     </a> 
+                                                                                 @endif 
                                     @else
                                         @if($isFree)
                                             @if($is_cart == 1)

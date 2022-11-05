@@ -51,12 +51,12 @@
                         <div class=" ">
                             <div class="input-effect">
                                 <input type="hidden" name="category" id="category">
-                                {{--                                <select class="niceSelect w-100 bb category form-control">--}}
-                                {{--                                    <option data-display="{{__('footer.Widget Title')}}*" value="">--{{__('footer.Widget Title')}}--</option>--}}
-                                {{--                                    <option value="1">{{ $FooterContent->footer_section_one_title }}</option>--}}
-                                {{--                                    <option value="2">{{ $FooterContent->footer_section_two_title }}</option>--}}
-                                {{--                                    <option value="3">{{ $FooterContent->footer_section_three_title }}</option>--}}
-                                {{--                                </select>--}}
+                                                                 <select class="niceSelect w-100 bb category form-control"> 
+                                                                     <option data-display="{{__('footer.Widget Title')}}*" value="">--{{__('footer.Widget Title')}}--</option> 
+                                                                     <option value="1">{{ $FooterContent->footer_section_one_title }}</option> 
+                                                                     <option value="2">{{ $FooterContent->footer_section_two_title }}</option> 
+                                                                     <option value="3">{{ $FooterContent->footer_section_three_title }}</option> 
+                                                                 </select> 
                                 <span class="focus-border"></span>
                             </div>
                             @error('category')

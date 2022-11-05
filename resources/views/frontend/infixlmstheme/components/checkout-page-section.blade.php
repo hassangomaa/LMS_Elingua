@@ -313,7 +313,7 @@
                                 <button type="button" id="applyCoupon"
                                         class="theme_btn small_btn2 ">{{__('coupons.Apply')}}</button>
                             </div>
-                            {{--                        </form>--}}
+                                                     </form> 
                         </div>
 
 

@@ -1,7 +1,7 @@
 <div>
     <div>
 
-        {{--    <td>
+             <td>
                 <label class="primary_checkbox d-flex " for="student{{$row->id}}">
                     <input type="checkbox"
                            id="student{{$row->id}}"
@@ -12,7 +12,7 @@
                     <span class="checkmark"></span>
                 </label>
 
-            </td>--}}
+            </td> 
         @if (!$columnSelect || ($columnSelect && $this->isColumnSelectEnabled('name')))
             <x-livewire-tables::bs4.table.cell>
                 {{$row->name}}
@@ -36,13 +36,13 @@
                 {{$row->employee_id}}
             </x-livewire-tables::bs4.table.cell>
         @endif
-        {{--    <x-livewire-tables::bs4.table.cell>
+             <x-livewire-tables::bs4.table.cell>
                 @if($row->status==1)
                     Active
                 @else
                     <span class="text-danger">Deactivate</span>
                 @endif
-            </x-livewire-tables::bs4.table.cell>--}}
+            </x-livewire-tables::bs4.table.cell> 
 
     </div>
 </div>

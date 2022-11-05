@@ -35,7 +35,7 @@ class MyDashboardPageSection extends Component
         } else if ($Hour >= 19 || $Hour <= 4) {
             $wish_string = trans("student.Good Evening");
         }
-        $date = Carbon::now(Settings('active_time_zone'))->format("jS F Y \, l");
+        $date =  "";
 
         $mycourse = $enrolledByUser
             ->whereHas('course', function ($query) {

@@ -2,7 +2,7 @@
     <div>
         <div>
 
-            {{--     <td>
+                  <td>
 
                      <label class="primary_checkbox d-flex " for="plan{{$row->id}}">
                          <input type="checkbox"
@@ -14,21 +14,21 @@
                          <span class="checkmark"></span>
                      </label>
 
-                 </td>--}}
+                 </td> 
             @if (!$columnSelect || ($columnSelect && $this->isColumnSelectEnabled('title')))
                 <x-livewire-tables::bs4.table.cell>
                     {{$row->title}}
                 </x-livewire-tables::bs4.table.cell>
             @endif
 
-            {{--      <x-livewire-tables::bs4.table.cell>
+                   <x-livewire-tables::bs4.table.cell>
                       {{getPriceFormat($row->price)}}
                   </x-livewire-tables::bs4.table.cell>
 
                   <x-livewire-tables::bs4.table.cell>
                       {{$row->about}}
                   </x-livewire-tables::bs4.table.cell>
-      --}}
+       
             @if (!$columnSelect || ($columnSelect && $this->isColumnSelectEnabled('join_date')))
 
                 <x-livewire-tables::bs4.table.cell>

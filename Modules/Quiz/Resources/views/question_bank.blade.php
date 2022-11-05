@@ -24,7 +24,7 @@
                 @endif
             @endif
             <div class="row">
-                {{-- @dd($bank) --}}
+                  @dd($bank)  
                 <div class="col-lg-12">
                     <div class="row">
                         <div class="col-lg-12">
@@ -140,7 +140,7 @@
                                             @endif
                                         </div>
                                     </div>
-                                    {{-- <input type="hidden" name="question_type" value="M"> --}}
+                                      <input type="hidden" name="question_type" value="M">  
                                     <div class="row mt-25">
                                         <div class="col-lg-4">
                                             <label class="primary_input_label"

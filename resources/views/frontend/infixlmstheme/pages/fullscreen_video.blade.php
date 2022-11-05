@@ -866,7 +866,7 @@
                 @endpush
 
             @endif
-            {{-- End Youtube --}}
+              End Youtube  
 
             @if ($lesson->host=='Vimeo')
                 <iframe class="video_iframe" id="video-id"
@@ -1135,7 +1135,7 @@
             @endif
 
 
-            {{-- Iframe video --}}
+              Iframe video  
             @push('js')
                 <script>
                     $(document).ready(function (e) {
@@ -1204,7 +1204,7 @@
             @endif
 
         @endif
-        {{-- </div> --}}
+          </div>  
 
 
         <input type="hidden" id="url" value="{{url('/')}}">
@@ -1261,14 +1261,14 @@
                                                                 <div class="course_play_name">
 
                                                                     <label class="primary_checkbox d-flex mb-0">
-                                                                        {{-- <input
+                                                                          <input
                                                                             id="lesson_complete_check_{{$singleLesson->id}}"
                                                                             type="checkbox"
                                                                             data-lesson="{{$singleLesson->id}}"
                                                                             data-course="{{$course->id}}"
                                                                             class="course_name"
                                                                             {{$singleLesson->completed && $singleLesson->completed->status == 1 ? 'checked' : ''}}  name="billing_address"
-                                                                            value="1"> --}}
+                                                                            value="1">  
                                                                         <input type="checkbox"
                                                                                {{$singleLesson->completed && $singleLesson->completed->status == 1 ? 'checked' : ''}} disabled>
                                                                         <span class="checkmark mr_15"
@@ -2011,7 +2011,7 @@
                 }
 
                 function Terminate(parameter) {
-                    {{--lessonAutoComplete(course_id, {{showPicName(Request::url())}});--}}
+                     lessonAutoComplete(course_id, {{showPicName(Request::url())}}); 
                     displayLog('Terminate ' + parameter)
                     return true
                 }
@@ -2080,7 +2080,7 @@
             }
         </script>
 
-        {{--        lessonAutoComplete(course_id, {{showPicName(Request::url())}});--}}
+                 lessonAutoComplete(course_id, {{showPicName(Request::url())}}); 
     @endif
 @endpush
 

@@ -35,7 +35,7 @@
     <script src="{{asset('public/frontend/infixlmstheme/js/videopopup.js')}}"></script>
     <script src="{{asset('public/frontend/infixlmstheme/js/video.popup.js')}}"></script>
 
-  {{--  <script>
+     <script>
 
 
         $("#formSubmitBtn").on("click", function (e) {
@@ -152,7 +152,7 @@
 
         }
     </script>
---}}
+ 
 
 
     <script>

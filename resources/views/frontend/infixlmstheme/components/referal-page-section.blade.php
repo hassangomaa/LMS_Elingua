@@ -68,7 +68,7 @@
                                             <tbody>
                                             @if(isset($referrals))
                                                 @foreach ($referrals as $key=> $referral)
-                                                    {{-- {{dd($referral)}} --}}
+                                                      {{dd($referral)}}  
                                                     <tr>
                                                         <td>{{$key+1}}</td>
                                                         <td>
@@ -82,9 +82,9 @@
                                                                     <a href="#"><h4
                                                                             class="font_16 f_w_400 mb-0 d-inline-block">{{@$referral->name}}</h4>
                                                                     </a>
-                                                                    {{--                                                                    <a href="#"><p--}}
-                                                                    {{--                                                                            class="font_14">{{@$referral->email}}</p>--}}
-                                                                    {{--                                                                    </a>--}}
+                                                                                                                                         <a href="#"><p 
+                                                                                                                                                 class="font_14">{{@$referral->email}}</p> 
+                                                                                                                                         </a> 
                                                                 </div>
                                                             </div>
                                                         </td>

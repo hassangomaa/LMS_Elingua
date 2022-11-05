@@ -52,7 +52,7 @@
                 </div>
             </div>
         </div>
-        {{-- Delete Modal Start --}}
+          Delete Modal Start  
         <div class="modal fade admin-query" id="deleteSubmenuItem">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
@@ -79,7 +79,7 @@
         <input type="hidden" id="headermenu_edit_url" value="{{route('frontend.headermenu.edit-element')}}">
         <input type="hidden" id="headermenu_add_url" value="{{route('frontend.headermenu.add-element')}}">
         <input type="hidden" id="header_token" value="{{csrf_token()}}">
-        {{-- Delete Modal End --}}
+          Delete Modal End  
     </section>
     @push('scripts')
         <script src="{{asset('public/backend/vendors/nestable/jquery.nestable.min.js')}}"></script>

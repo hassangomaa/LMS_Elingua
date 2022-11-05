@@ -244,7 +244,7 @@
                                                            id="addCpassword" name="password_confirmation"
                                                            placeholder="{{__('common.Minimum 8 characters')}}">
                                                 </div>
-                                                {{--                                                    <input class="primary_input_field"  name="password_confirmation" placeholder="-" type="text">--}}
+                                                                                                     <input class="primary_input_field"  name="password_confirmation" placeholder="-" type="text"> 
                                             </div>
                                         </div>
                                     </div>

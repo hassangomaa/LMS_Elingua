@@ -40,7 +40,7 @@
                                             <img src="{{ asset('Modules/Appointment/Resources/assets/frontend/') }}/img/all-icons/country/{{ strtolower($instructor->userCountry->iso2) }}.svg"
                                                 alt="" width="21" height="15">
                                             </span><span>
-                                                {{-- <img src="{{ asset('Modules/Appointment/Resources/assets/frontend/') }}/img/all-icons/badge.svg" alt=""> --}}
+                                                  <img src="{{ asset('Modules/Appointment/Resources/assets/frontend/') }}/img/all-icons/badge.svg" alt="">  
                                             </span>
                                     </h4>
                                     <ul>
@@ -55,7 +55,7 @@
                                             {{ __('appointment.students') }}
                                         </li>
                                     @endif
-                                        {{-- <li><i class="fas fa-globe"></i>English</li> --}}
+                                          <li><i class="fas fa-globe"></i>English</li>  
                                     </ul>
 
 

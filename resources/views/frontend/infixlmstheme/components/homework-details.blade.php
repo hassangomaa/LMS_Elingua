@@ -137,7 +137,7 @@
                                         <label for="">{{__('subscription.Answer')}} *</label>
                                         <textarea class="textArea lms_summernote {{ @$errors->has('answer') ? ' is-invalid' : '' }}"
                                             cols="30" rows="10" name="answer">
-                                            {{-- {!! @$submit_info->answer !!} --}}
+                                              {!! @$submit_info->answer !!}  
                 
                                         </textarea>
                                         <span class="text-danger" role="alert">{{$errors->first('answer')}}</span>
@@ -189,14 +189,14 @@
                                     </div>
                              </div>
                                  <div class="col-lg-4 align-left" style="margin-top: 20px;">
-                                            {{-- <button class="theme_btn small_btn2 p-2 m-1">Attachment</button> --}}
+                                              <button class="theme_btn small_btn2 p-2 m-1">Attachment</button>  
                                             <a data-toggle="modal" data-target="#viewAttachment{{$submit_info->id}}" href="#" class="theme_btn small_btn2 p-2 m-1">Attachment {{__('common.View')}}</a>
                                  </div>
 
                                         @include(theme('pages.details_attachment_view'))
                             @endif
 
-                            {{-- @if (isset($submit_info) && $submit_info->assigned->pass_status)
+                              @if (isset($submit_info) && $submit_info->assigned->pass_status)
                                 @if($submit_info->assigned->pass_status!=1)
                                     <div class="row">
                                         <div class="col-12 text-center">
@@ -207,7 +207,7 @@
                                     </div>
                                     
                                 @endif
-                            @endif --}}
+                            @endif  
                      @endif
                    
 

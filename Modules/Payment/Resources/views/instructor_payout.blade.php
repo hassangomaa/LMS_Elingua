@@ -140,7 +140,7 @@
                     <div class="row">
                         <div class="col-md-12">
                             @if(auth()->user()->payout=="Bank Payment")
-                                {{--                        <b class="pt-3  ">{{auth()->user()->payout}}</b>--}}
+                                                         <b class="pt-3  ">{{auth()->user()->payout}}</b> 
                                 <p class="pb-20">
                                     <b>{{__('setting.Bank Name')}}</b>: {{auth()->user()->bank_name}} <br>
                                     <b>{{__('setting.Branch Name')}}</b>: {{auth()->user()->branch_name}} <br>

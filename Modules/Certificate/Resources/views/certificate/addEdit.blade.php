@@ -625,7 +625,7 @@
                     </div>
 
 
-                    {{-- Start QR Section --}}
+                      Start QR Section  
                     <hr>
                     <div class="row mt-25 padding_40">
                         <div class="col-md-12">
@@ -719,7 +719,7 @@
                         </div>
                     </div>
 
-                    {{-- Start Certificate Number Section --}}
+                      Start Certificate Number Section  
                     <hr>
                     <div class="row mt-25 padding_40">
                         <div class="col-md-12">

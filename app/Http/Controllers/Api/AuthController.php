@@ -502,7 +502,7 @@ class AuthController extends Controller
                         $login = UserLogin::where('user_id', Auth::id())->where('status', 1)->latest()->first();
                         if ($login) {
                             $login->status = 0;
-                            $login->logout_at = Carbon::now(Settings('active_time_zone'));
+                            $login->logout_at = "";
                             $login->save();
                         }
                     }

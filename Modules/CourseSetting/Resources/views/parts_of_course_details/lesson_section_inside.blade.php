@@ -7,7 +7,7 @@
 @php
     $key =$key+100;
 @endphp
-{{-- @dd($editLesson) --}}
+  @dd($editLesson)  
 <input type="hidden" id="url" value="{{url('/')}}">
 <input type="hidden" name="course_id" value="{{@$course->id}}">
 <input type="hidden" name="chapter_id" value="{{@$chapter->id}}">
@@ -285,7 +285,7 @@
                                     <div class="" id="">
 
                                         <select class=" lessonVdocipher VdoCipherVideoLesson" name="vdocipher"
-{{--                                                id="VdoCipherVideoLesson{{$key}}"--}}
+                                                 id="VdoCipherVideoLesson{{$key}}" 
 
                                         >
                                             <option

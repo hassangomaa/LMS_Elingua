@@ -126,11 +126,11 @@ a.mr-10.chapter_icon {
 }
 
 </style>
-{{-- <div class="role_permission_wrap">
+  <div class="role_permission_wrap">
     <div class="permission_title">
         <h4>Assign Permission ({{@$role->name}})</h4>
     </div>
-</div> --}}
+</div>  
 @if (isset($editChapter))
 <div class="row" id="edit_chapter_section">
     <div class="col-lg-1"></div>
@@ -190,7 +190,7 @@ a.mr-10.chapter_icon {
                     <i class="far fa-sticky-note text-white"></i>
                     <label for="Main_Module_1">{{@$chapter->name}}</label>
                 </div>
-                {{-- <div class="arrow collapsed"  data-toggle="collapse" data-target="#Rolechapter_id{{$key}}"  aria-expanded="true"> --}}
+                  <div class="arrow collapsed"  data-toggle="collapse" data-target="#Rolechapter_id{{$key}}"  aria-expanded="true">  
                    <div class="mr-10 mt-1">
                        <a class="mr-10 chapter_icon"  href="{{url('admin/course/course-chapter-show/'.$course->id.'/'.$chapter->id)}}" > <i class="ti-pencil-alt"></i> </a>
                        <a class="mr-10 chapter_icon"  href="{{url('admin/course/delete-chapter/'.$chapter->id.'/'.$course->id)}}" > <i class="ti-trash"></i> </a>
@@ -207,7 +207,7 @@ a.mr-10.chapter_icon {
             </div>
             </div>
             <div id="Rolechapter_id{{$key}}" class="collapse capter_body @if(isset($data['chapter_id']) && $data['chapter_id']==$chapter->id) show @endif">
-                {{-- start option head --}}
+                  start option head  
                 
                 <div class="row d-flex mt-30 pl-20">
                     <div class="col-lg-2">
@@ -218,9 +218,9 @@ a.mr-10.chapter_icon {
                         <div class="lms_option_box d-flex" >
                             <div class="pt-20 pb-30 lms_option_list_inside" id="lms_option_list{{$key}}" style="display: none">
                                 <div class="add-item-forms--inline-menu--1OTdc">
-                                    {{-- <button data-purpose="add-chapter-btn" aria-label="Add Chapter" type="button" data-chapter="{{$key}}" id="show_chapter_section_inside" class="ellipsis btn btn-tertiary btn-block show_chapter_section_inside">
+                                      <button data-purpose="add-chapter-btn" aria-label="Add Chapter" type="button" data-chapter="{{$key}}" id="show_chapter_section_inside" class="ellipsis btn btn-tertiary btn-block show_chapter_section_inside">
                                         <i class="ti-plus"></i> Chapter
-                                    </button> --}}
+                                    </button>  
                                     <button data-purpose="add-lesson-btn" aria-label="Add Lesson" type="button" data-chapter="{{$key}}" id="show_lesson_section_inside" class="ellipsis btn btn-tertiary btn-block show_lesson_section_inside">
                                         <i class="ti-plus"></i>
                                          Lesson
@@ -234,9 +234,9 @@ a.mr-10.chapter_icon {
                     </div>
 
                 </div>
-                {{-- end option head --}}
-                {{-- START ITEM SECTION --}}
-{{-- @dd($editChapter) --}}
+                  end option head  
+                  START ITEM SECTION  
+  @dd($editChapter)  
                
                 
 
@@ -323,10 +323,10 @@ a.mr-10.chapter_icon {
                     <div class="col-lg-1"></div>
                         
                 </div>
-                {{-- END ITEM SECTION --}}
+                  END ITEM SECTION  
                 <div  class="permission_body">
                     @foreach ($chapter->lessons as $key => $lesson)
-                    {{-- @dd($editLesson) --}}
+                      @dd($editLesson)  
                     @if ($key==0)
                         <div class="row mb-40" id="add_question_section_inside{{$chapter->id}}" style="display: none">
                             <div class="col-lg-1"></div>
@@ -357,7 +357,7 @@ a.mr-10.chapter_icon {
                             @if ($lesson->is_quiz==1)
                                 @foreach ($lesson->quiz as $quiz_key=> $quiz)
                                     <span class="flex-fill"> <i class="ti-check-box"></i>   <span class="serial" >{{$key+1}}</span>. {{@$quiz->title}}</span> 
-                                    {{-- data-toggle="collapse" data-target="#collapseOne{{$quiz->id}}" aria-expanded="true" aria-controls="collapseOne{{$quiz->id}}" --}}
+                                      data-toggle="collapse" data-target="#collapseOne{{$quiz->id}}" aria-expanded="true" aria-controls="collapseOne{{$quiz->id}}"  
                                             
 
                                     
@@ -409,11 +409,11 @@ a.mr-10.chapter_icon {
                                                     @else
                                                         <span>No Assigned Question</span>
                                                     @endif
-                                                    {{-- <ul>
+                                                      <ul>
                                                         @foreach ($quiz->assign as $question_key => $assign)
                                                             <li>{{$question_key+1}}. {{$assign->questionBank->question}}</li>
                                                         @endforeach
-                                                    </ul> --}}
+                                                    </ul>  
                                                 </div>
                                               </div>
                                          

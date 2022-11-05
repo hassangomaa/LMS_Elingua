@@ -25,7 +25,7 @@
                               
                                             @csrf
                                            
-                                            {{-- <input type="hidden" name="category" value="1"> --}}
+                                              <input type="hidden" name="category" value="1">  
                                             <div class="row">
                                                 <div class="col-lg-4">
                                                     
@@ -43,7 +43,7 @@
 
                                                             </label>
                                                            {{__('frontendmanage.Show Left Side Text')}}
-                                                            {{-- <i class="ti-move  float-right"></i> --}}
+                                                              <i class="ti-move  float-right"></i>  
                                                         </div>
                                                     </div>
                                                     @push('js')
@@ -115,7 +115,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                {{-- Second --}}
+                                                  Second  
                                                 <div class="col-lg-4">
                                                     
                                                     <div class="col-xl-12 ">
@@ -132,7 +132,7 @@
 
                                                             </label>
                                                             {{ __('frontendmanage.Right Side Text 1') }}
-                                                            {{-- <i class="ti-move  float-right"></i> --}}
+                                                              <i class="ti-move  float-right"></i>  
                                                         </div>
                                                     </div>
                                                     @push('js')
@@ -205,7 +205,7 @@
                                                     </div>
                                                 </div>
                                                 </div>
-                                                {{-- third --}}
+                                                  third  
                                                 <div class="col-lg-4">
                                                     
                                                     <div class="col-xl-12 ">
@@ -222,7 +222,7 @@
 
                                                             </label>
                                                             {{ __('frontendmanage.Right Side Text 1') }}
-                                                            {{-- <i class="ti-move  float-right"></i> --}}
+                                                              <i class="ti-move  float-right"></i>  
                                                         </div>
                                                     </div>
                                                     @push('js')

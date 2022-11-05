@@ -21,7 +21,7 @@
                                     @csrf
                                     <input type="hidden" name="id" value="{{@$course->id}}">
 
-                                            {{-- <label class="primary_input_label" for="">Exercise File</label> --}}
+                                              <label class="primary_input_label" for="">Exercise File</label>  
                                             <div class="primary_file_uploader">
                                                     <input class="primary-input" type="text" id="placeholderFileOneName" value="" placeholder="Browse Image file" readonly="">
                                                     <button class="" type="button">
@@ -33,7 +33,7 @@
 
                                             <div class="col-xl-12 mt-20">
                                                 <div class="primary_input">
-                                                    {{-- <label class="primary_input_label" for=""> {{__('common.Name')}} </label> --}}
+                                                      <label class="primary_input_label" for=""> {{__('common.Name')}} </label>  
                                                     <input class="primary_input_field" name="fileName" value="" placeholder="{{__('common.File')}} {{__('common.Name')}}" type="text">
                                                 </div>
                                             </div>
@@ -87,7 +87,7 @@
                                             <tr>
                                                 <th>{{ $key+1 }}</th>
 
-                                        {{-- `user_id`, `title`, `code`, `type`, `status`, `value`, `min_purchase`, `max_discount`, `start_date`, `end_date` --}}
+                                          `user_id`, `title`, `code`, `type`, `status`, `value`, `min_purchase`, `max_discount`, `start_date`, `end_date`  
                                                 <td>{{@$exercise_file->fileName }}</td>
                                                 <td>
 
@@ -128,7 +128,7 @@
                                     @csrf
                                     <input type="hidden" name="id" value="{{@$exercise_file->id}}">
 
-                                            {{-- <label class="primary_input_label" for="">Exercise File</label> --}}
+                                              <label class="primary_input_label" for="">Exercise File</label>  
                                             <div class="primary_file_uploader">
                                                     <input class="primary-input" type="text" id="placeholderFileOneName" value="" placeholder="{{showPicName(@$exercise_file->file)}}" readonly="">
                                                     <button class="" type="button">
@@ -140,7 +140,7 @@
 
                                             <div class="col-xl-12 mt-20">
                                                 <div class="primary_input">
-                                                    {{-- <label class="primary_input_label" for=""> {{__('common.Name')}} </label> --}}
+                                                      <label class="primary_input_label" for=""> {{__('common.Name')}} </label>  
                                                     <input class="primary_input_field" name="fileName" value="{{$exercise_file->fileName}}" placeholder="{{__('common.File')}} {{__('common.Name')}}" type="text">
                                                 </div>
                                             </div>

@@ -791,11 +791,11 @@
 
                         @if (!isModuleActive('LmsSaas'))
 
-{{--                            @if (permissionCheck('modulemanager.index'))--}}
-{{--                                <li>--}}
-{{--                                    <a href="{{ route('modulemanager.index') }}">{{ __('common.Module Manager') }}</a>--}}
-{{--                                </li>--}}
-{{--                            @endif--}}
+                             @if (permissionCheck('modulemanager.index'))
+                                 <li>
+{{--                                     <a href="{{ route('modulemanager.index') }}">{{ __('common.Module Manager') }}</a> --}}
+                                 </li>
+                             @endif
                             @if(permissionCheck('setting.updateSystem'))
                                 <li>
                                     <a href="{{ route('setting.updateSystem') }}">{{ __('setting.About') }} {{__('common.&')}} {{ __('setting.Update') }}</a>

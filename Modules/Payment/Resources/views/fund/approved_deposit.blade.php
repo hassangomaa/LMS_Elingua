@@ -42,7 +42,7 @@
                         <tbody>
                         @foreach($approved_deposits as $value)
                             <tr>
-                                {{-- <td>{{@$value->id}}</td> --}}
+                                  <td>{{@$value->id}}</td>  
                                 <td>{{@$value->full_name}}</td>
                                 <td>{{@$value->amount}}</td>
                                 <td>
@@ -69,7 +69,7 @@
                                                     </button>
                                                     <div class="dropdown-menu dropdown-menu-right">
 
-                                                        {{-- <a class="dropdown-item" data-toggle="modal" data-target="#EditFund{{@$value->id}}"  href="#">@lang('lang.edit')</a> --}}
+                                                          <a class="dropdown-item" data-toggle="modal" data-target="#EditFund{{@$value->id}}"  href="#">@lang('lang.edit')</a>  
                                                         <a class="dropdown-item" data-toggle="modal"
                                                            data-target="#DeleteFund{{@$value->id}}"
                                                            href="#">@lang('lang.delete')</a>

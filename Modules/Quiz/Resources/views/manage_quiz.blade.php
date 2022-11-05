@@ -105,7 +105,7 @@
                                     <th>{{__('quiz.Question')}}</th>
                                     <th>{{__('quiz.Marks')}}</th>
                                     <th>{{__('quiz.Image')}}</th>
-                                    {{--                                    <th>{{__('common.Action')}}</th>--}}
+                                                                         <th>{{__('common.Action')}}</th> 
                                 </tr>
                                 </thead>
                                 <tbody>

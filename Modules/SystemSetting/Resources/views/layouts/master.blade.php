@@ -6,14 +6,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Module SystemSetting</title>
 
-       {{-- Laravel Mix - CSS File --}}
-       {{-- <link rel="stylesheet" href="{{ mix('css/systemsetting.css') }}"> --}}
+         Laravel Mix - CSS File  
+         <link rel="stylesheet" href="{{ mix('css/systemsetting.css') }}">  
 
     </head>
     <body>
         @yield('content')
 
-        {{-- Laravel Mix - JS File --}}
-        {{-- <script src="{{ mix('js/systemsetting.js') }}"></script> --}}
+          Laravel Mix - JS File  
+          <script src="{{ mix('js/systemsetting.js') }}"></script>  
     </body>
 </html>

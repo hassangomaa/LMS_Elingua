@@ -1,11 +1,11 @@
-{{-- @php
+  @php
     $user = Auth::user();
     if ($user->role_id == 1) {
         $groups = Modules\Quiz\Entities\QuestionGroup::where('active_status', 1)->latest()->get();
     } else {
         $groups = Modules\Quiz\Entities\QuestionGroup::where('active_status', 1)->where('user_id', $user->id)->latest()->get();
     }
-@endphp --}}
+@endphp  
 @if(isset($bank))
 
 {{ Form::open(['class' => 'form-horizontal', 'files' => true, 'route' => array('question-bank-update',$bank->id), 'method' => 'PUT', 'enctype' => 'multipart/form-data', 'id' => 'question_bank']) }}
@@ -34,8 +34,8 @@
         <div class="col-lg-12">
 
 
-                {{-- Start New Create --}}
-                {{-- <div class="row">
+                  Start New Create  
+                  <div class="row">
                     <div class="col-lg-12">
                       
                         <label class="primary_input_label"
@@ -63,7 +63,7 @@
                     </span>
                         @endif
                     </div>
-                </div> --}}
+                </div>  
                 <div class="row mt-25">
                     <div class="col-lg-12">
                         <div class="input-effect">
@@ -157,7 +157,7 @@
                    </div>
                @endforeach
            </div>
-                {{-- End New Create --}}
+                  End New Create  
             
       
             

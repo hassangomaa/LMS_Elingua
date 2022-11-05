@@ -147,7 +147,7 @@
                                 </div>
 
 
-                                {{-- Start setting  --}}
+                                  Start setting   
                                 <div class="row mt-40">
                                     <div class="col-lg-12 d-flex">
                                         <p class="text-uppercase fw-500 mb-10"
@@ -528,19 +528,19 @@
 
                                     <div class="col-lg-12 mt-10">
                                         <div class="row">
-                                            {{--   <div class="col-lg-12 d-flex">
+                                                <div class="col-lg-12 d-flex">
                                                    <p class="text-uppercase fw-500 mb-10">{{__('Logo')}} </p>
-                                               </div>--}}
+                                               </div> 
                                             <div class="col-lg-12">
                                                 <div class="radio-btn-flex ml-20">
                                                     <div class="row">
                                                         <div class="radio-btn-flex ml-20">
                                                             <div class="row">
                                                                 <div class="col-lg-12">
-                                                                    {{--<button class="primary-btn-small-input"
+                                                                     <button class="primary-btn-small-input"
                                                                             type="button">
 
-                                                                    </button>--}}
+                                                                    </button> 
                                                                     <label
                                                                         class="primary-btn small fix-gr-bg"
                                                                         for="upload_content_file">{{__('bbb.Browse')}}</label>
@@ -1057,7 +1057,7 @@
                                     </div>
                                 </div>
 
-                                {{-- Start setting  --}}
+                                  Start setting   
 
 
                                 <div class="row mt-40">

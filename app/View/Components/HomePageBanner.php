@@ -18,9 +18,9 @@ class HomePageBanner extends Component
     public function render()
     {
         $sliders = null;
-        if ($this->homeContent->show_banner_section == 0) {
-            $sliders = Slider::where('status', 1)->get();
-        }
+//        if ($this->homeContent->show_banner_section == 0) {
+//            $sliders = Slider::where('status', 1)->get();
+//        }
         return view(theme('components.home-page-banner'), compact('sliders'));
     }
 }

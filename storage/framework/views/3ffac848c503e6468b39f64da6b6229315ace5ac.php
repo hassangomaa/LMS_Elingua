@@ -798,11 +798,11 @@
 
                         <?php if(!isModuleActive('LmsSaas')): ?>
 
+                             <?php if(permissionCheck('modulemanager.index')): ?>
+                                 <li>
 
-
-
-
-
+                                 </li>
+                             <?php endif; ?>
                             <?php if(permissionCheck('setting.updateSystem')): ?>
                                 <li>
                                     <a href="<?php echo e(route('setting.updateSystem')); ?>"><?php echo e(__('setting.About')); ?> <?php echo e(__('common.&')); ?> <?php echo e(__('setting.Update')); ?></a>

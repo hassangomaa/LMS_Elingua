@@ -346,17 +346,17 @@
                                                 data-display="{{__('common.Select')}} video "
                                                 value="">{{__('common.Select')}} video
                                             </option>
-                                            {{--                                            @foreach ($vdocipher_list as $vdo)--}}
-                                            {{--                                                @if(isset($editLesson))--}}
-                                            {{--                                                    <option--}}
-                                            {{--                                                        value="{{@$vdo->id}}" {{$vdo->id==$editLesson->video_url?'selected':''}}>{{@$vdo->title}}</option>--}}
-                                            {{--                                                @else--}}
-                                            {{--                                                    <option--}}
-                                            {{--                                                        value="{{@$vdo->id}}">{{@$vdo->title}}</option>--}}
-                                            {{--                                                @endif--}}
+                                                                                         @foreach ($vdocipher_list as $vdo) 
+                                                                                             @if(isset($editLesson)) 
+                                                                                                 <option 
+                                                                                                     value="{{@$vdo->id}}" {{$vdo->id==$editLesson->video_url?'selected':''}}>{{@$vdo->title}}</option> 
+                                                                                             @else 
+                                                                                                 <option 
+                                                                                                     value="{{@$vdo->id}}">{{@$vdo->title}}</option> 
+                                                                                             @endif 
 
 
-                                            {{--                                            @endforeach--}}
+                                                                                         @endforeach 
                                         </select>
                                         @if ($errors->has('vdocipher'))
                                             <span class="invalid-feedback invalid-select"

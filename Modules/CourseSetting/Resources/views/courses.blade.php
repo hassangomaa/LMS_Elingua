@@ -200,7 +200,7 @@
                         </div>
                     </div>
                 </div>
-                {{-- @dd(Auth::user()) --}}
+                  @dd(Auth::user())  
 
 
                 <div class="modal fade admin-query" id="editCourse">
@@ -582,7 +582,7 @@
                                                         <label class="primary_input_label"
                                                                for="">{{__('courses.Video File')}}</label>
                                                         <div class="primary_file_uploader">
-                                                            {{-- <input
+                                                              <input
                                                                  class="primary-input filePlaceholder"
                                                                  type="text"
 
@@ -604,7 +604,7 @@
                                                                      role="alert">
                                              <strong>{{ $errors->first('file') }}</strong>
                                          </span>
-                                                             @endif--}}
+                                                             @endif 
                                                             <input type="file" class="filepond" name="file">
                                                         </div>
                                                     </div>

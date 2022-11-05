@@ -38,7 +38,7 @@
                                     <tr>
                                         <th scope="col">{{__('common.ID')}}</th>
                                         <th scope="col" style="width: 50%">{{__('common.Name')}}</th>
-                                        {{-- <th scope="col">{{__('common.Teacher')}}</th> --}}
+                                          <th scope="col">{{__('common.Teacher')}}</th>  
                                         <th scope="col">{{__('common.Progress')}}</th>
                                         <th scope="col">{{__('student.Enroll Date')}}</th>
                                     </tr>
@@ -52,7 +52,7 @@
                                                     {{ $enroll->course->title }}
                                                 </a>
                                             </td>
-                                            {{-- <td scope="col">{{ $enroll->course->user->name }}</td> --}}
+                                              <td scope="col">{{ $enroll->course->user->name }}</td>  
                                             <td scope="col">
 
 

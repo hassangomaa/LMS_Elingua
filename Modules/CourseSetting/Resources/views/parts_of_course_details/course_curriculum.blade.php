@@ -11,7 +11,7 @@
     </div>
 </div>
 @foreach ($chapters as $chapter)
-    {{-- <h3>{{$chapter->name}} </h3> --}}
+      <h3>{{$chapter->name}} </h3>  
     <div class="card text-center mt-25">
         <div class="card-header">
             <h3>{{$chapter->name}} </h3>
@@ -20,7 +20,7 @@
 
             <table class="table table-striped">
                 @foreach ($chapter->lessons as $lesson)
-                    {{-- @dd($lesson) --}}
+                      @dd($lesson)  
                     <tr>
                         <td style="text-align: left">
                             <h5> {{$lesson['name']}} </h5>

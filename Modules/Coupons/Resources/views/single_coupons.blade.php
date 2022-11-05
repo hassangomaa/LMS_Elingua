@@ -142,7 +142,7 @@
                                                 </div>
 
 
-                                                {{-- input title  --}}
+                                                  input title   
                                                 <div class="col-xl-12">
                                                     <div class="primary_input mb-25">
                                                         <label class="primary_input_label"
@@ -161,7 +161,7 @@
                                                     </div>
                                                 </div>
 
-                                                {{-- input Code  --}}
+                                                  input Code   
                                                 <div class="col-xl-12">
                                                     <div class="primary_input mb-25">
                                                         <label class="primary_input_label"
@@ -181,7 +181,7 @@
                                                 </div>
 
 
-                                                {{-- input min_purchase  --}}
+                                                  input min_purchase   
                                                 <div class="col-xl-12">
                                                     <div class="primary_input mb-25">
                                                         <label class="primary_input_label"
@@ -201,7 +201,7 @@
                                                     </div>
                                                 </div>
 
-                                                {{-- input Amount  --}}
+                                                  input Amount   
                                                 <div class="col-xl-12">
                                                     <div class="primary_input mb-25">
                                                         <label class="primary_input_label"
@@ -223,7 +223,7 @@
                                                 </div>
 
 
-                                                {{-- input Amount  --}}
+                                                  input Amount   
                                                 <div class="col-xl-12">
                                                     <div class="primary_input mb-25">
                                                         <label class="primary_input_label"
@@ -259,7 +259,7 @@
                                                         </select>
                                                     </div>
                                                 </div>
-                                                {{-- Start Date Input --}}
+                                                  Start Date Input  
                                                 <div class="col-xl-12">
                                                     <div class="primary_input mb-15">
                                                         <label class="primary_input_label"
@@ -290,7 +290,7 @@
                                                     </div>
                                                 </div>
 
-                                                {{-- End Date Input --}}
+                                                  End Date Input  
                                                 <div class="col-xl-12">
                                                     <div class="primary_input mb-15">
                                                         <label class="primary_input_label"

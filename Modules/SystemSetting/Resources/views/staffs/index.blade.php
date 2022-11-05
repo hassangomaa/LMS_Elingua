@@ -20,7 +20,7 @@
                             @if(permissionCheck('staffs.store'))
                             <ul class="d-flex">
                                 <li><a class="primary-btn radius_30px mr-10 fix-gr-bg" href="{{ route('staffs.create') }}"><i class="ti-plus"></i>{{ __('common.Add New') }} {{ __('common.Staff') }}</a></li>
-                                {{-- <li><a class="primary-btn radius_30px mr-10 fix-gr-bg" href="{{route('staffs.csv_upload')}}"><i class="ti-export"></i>{{__('leave.Upload Via CSV')}}</a></li> --}}
+                                  <li><a class="primary-btn radius_30px mr-10 fix-gr-bg" href="{{route('staffs.csv_upload')}}"><i class="ti-export"></i>{{__('leave.Upload Via CSV')}}</a></li>  
                             </ul>
                             @endif
                         </div>
@@ -91,12 +91,12 @@
                                                             @if(permissionCheck('staffs.destroy'))
                                                             <a onclick="confirm_modal('{{route('staffs.destroy', $staff->user->id)}}');" class="dropdown-item edit_brand">{{__('common.Delete')}}</a>
                                                             @endif
-{{--                                                            @if(permissionCheck('staffs.active') && $staff->user->is_active == 0)--}}
-{{--                                                                <a data-id="{{$staff->user->id}}" class="dropdown-item active_staff">{{__('common.Active')}}</a>--}}
-{{--                                                            @endif--}}
-{{--                                                            @if(permissionCheck('staffs.inactive') && $staff->user->is_active == 1)--}}
-{{--                                                                <a data-id="{{$staff->user->id}}" class="dropdown-item inactive_staff">{{__('common.Inactive')}}</a>--}}
-{{--                                                            @endif--}}
+                                                             @if(permissionCheck('staffs.active') && $staff->user->is_active == 0) 
+                                                                 <a data-id="{{$staff->user->id}}" class="dropdown-item active_staff">{{__('common.Active')}}</a> 
+                                                             @endif 
+                                                             @if(permissionCheck('staffs.inactive') && $staff->user->is_active == 1) 
+                                                                 <a data-id="{{$staff->user->id}}" class="dropdown-item inactive_staff">{{__('common.Inactive')}}</a> 
+                                                             @endif 
                                                             @if(permissionCheck('staffs.resume'))
                                                                 <a data-id="{{$staff->user->id}}" class="dropdown-item staff_resume">{{__('common.Resume')}}</a>
                                                             @endif

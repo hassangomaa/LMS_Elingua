@@ -40,7 +40,7 @@
                                             <tbody>
                                             @if(isset($certificate_records))
                                                 @foreach ($certificate_records as $key=>$certificate)
-                                                {{-- @dd($certificate) --}}
+                                                  @dd($certificate)  
                                                     <tr>
                                                         <td scope="row">{{@$key+1}}</td>
 

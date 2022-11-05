@@ -12,7 +12,7 @@
             </div>
         </div>
     </section>
-    {{-- @dd(saasEnv('MAIL_DRIVER')) --}}
+      @dd(saasEnv('MAIL_DRIVER'))  
     <section class="admin-visitor-area student-details">
         <div class="container-fluid p-0">
             <div class="row">

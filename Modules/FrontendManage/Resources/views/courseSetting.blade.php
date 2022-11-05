@@ -42,7 +42,7 @@
 
                                                             </label>
                                                             {{ __('frontendmanage.Show Rating') }} 
-                                                            {{-- <i class="ti-move  float-right"></i> --}}
+                                                              <i class="ti-move  float-right"></i>  
                                                         </div>
                                                 </div>
                                                 <div class="col-lg-6">
@@ -61,7 +61,7 @@
                                                             {{ __('frontendmanage.Show Cart') }} 
 
                                                             
-                                                            {{-- <i class="ti-move  float-right"></i> --}}
+                                                              <i class="ti-move  float-right"></i>  
                                                         </div>
                                                 </div>
                                             </div>
@@ -131,7 +131,7 @@
                                                         {{ __('frontendmanage.Show Left Sidebar from course/quiz/live class') }}
                                                     </div>
                                                 </div>
-                                                {{-- <div class="col-lg-6" id="grid_select_section" style="display: @if (@$data->show_cql_left_sidebar == 1) block @else none @endif"> --}}
+                                                  <div class="col-lg-6" id="grid_select_section" style="display: @if (@$data->show_cql_left_sidebar == 1) block @else none @endif">  
                                                 <div class="col-lg-6" id="grid_select_section" >
                                                     <div class="primary_input mb-25">
                                                         <label class="primary_input_label"
@@ -233,7 +233,7 @@
 
                                                             </label>
                                                             {{ __('frontendmanage.Show Instructor Rating') }} 
-                                                            {{-- <i class="ti-move  float-right"></i> --}}
+                                                              <i class="ti-move  float-right"></i>  
                                                         </div>
                                                 </div>
                                                 <div class="col-lg-6">
@@ -252,7 +252,7 @@
                                                             {{ __('frontendmanage.Show Instructor Reviews') }} 
 
                                                             
-                                                            {{-- <i class="ti-move  float-right"></i> --}}
+                                                              <i class="ti-move  float-right"></i>  
                                                         </div>
                                                 </div>
                                             </div>
@@ -271,7 +271,7 @@
 
                                                             </label>
                                                             {{ __('frontendmanage.Show Enrolled Count') }} 
-                                                            {{-- <i class="ti-move  float-right"></i> --}}
+                                                              <i class="ti-move  float-right"></i>  
                                                         </div>
                                                 </div>
                                                 <div class="col-lg-6">
@@ -290,7 +290,7 @@
                                                             {{ __('frontendmanage.Show Total Courses') }} 
 
                                                             
-                                                            {{-- <i class="ti-move  float-right"></i> --}}
+                                                              <i class="ti-move  float-right"></i>  
                                                         </div>
                                                 </div>
                                             </div>

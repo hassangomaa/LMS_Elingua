@@ -62,7 +62,7 @@
                                                 $tz = $scheduleInfo->timezone ?? Settings('active_time_zone');
                                             @endphp
                                             <div id="event_date" class="selected m-1">
-                                                {{-- <button class="scheduleBook"> --}}
+                                                  <button class="scheduleBook">  
 
                                               {{ $key+1 }}.  <a data-toggle="modal" id=""
                                                     data-target="#showDetail{{ $scheduleInfo['id'] }}" href="#"

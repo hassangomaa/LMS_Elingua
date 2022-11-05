@@ -214,5 +214,5 @@
     @include('backend.partials.delete_modal')
 @endsection
 @push('scripts')
-    {{--    <script src="{{asset('public/backend/js/category.js')}}"></script>--}}
+         <script src="{{asset('public/backend/js/category.js')}}"></script> 
 @endpush

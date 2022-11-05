@@ -1,20 +1,22 @@
-@php
-    $totalMessage =totalUnreadMessages();
-@endphp
+{{--@php--}}
+{{--    $totalMessage =totalUnreadMessages();--}}
+{{--@endphp--}}
 <div class="container-fluid no-gutters" id="main-nav-for-chat">
     <div class="row">
         <div class="col-lg-12 p-0">
             <div class="header_iner d-flex justify-content-between align-items-center">
-                @php
-                    $LanguageList = getLanguageList();
-                    $path =asset(Settings('logo') );
-                    $type = pathinfo($path, PATHINFO_EXTENSION);
-                    try {
-                        $data = file_get_contents($path);
-                    }catch (\Exception $e){
-                        $data='';
-                    }
-                @endphp
+{{--                @php--}}
+{{--                    $LanguageList = getLanguageList();--}}
+{{--                    $path =asset(Settings('logo') );--}}
+{{--                    $type = pathinfo($path, PATHINFO_EXTENSION);--}}
+{{--                    try {--}}
+{{--                        $data = file_get_contents($path);--}}
+{{--                    }catch (\Exception $e){--}}
+{{--                        $data='';--}}
+{{--                    }--}}
+{{--                @endphp--}}
+                {{$path =asset(Settings('logo') )}}
+                {{$data = file_get_contents($path)}}
                 <input type="hidden" id="logo_img" value="{{base64_encode($data)}}">
                 <input type="hidden" id="logo_title" value="{{Settings('company_name')}}">
                 <div class="small_logo_crm d-lg-none">
@@ -52,27 +54,27 @@
                 </div>
 
                 <div class="header_right d-flex justify-content-between align-items-center">
-                    @if(Settings('language_translation') == 1)
-                        <div class="select_style d-flex">
-                            <select name="code" id="language_code" class="nice_Select bgLess mb-0 menuLangChanger"
-                                    onchange="location = this.value;">
-                                @foreach ($LanguageList as $key => $language)
-                                    <option value="{{route('changeLanguage',$language->code)}}"
-                                            @if (\Illuminate\Support\Facades\Auth::user()->language_code == $language->code) selected @endif>{{ $language->native }}</option>
+{{--                    @if(Settings('language_translation') == 1)--}}
+{{--                        <div class="select_style d-flex">--}}
+{{--                            <select name="code" id="language_code" class="nice_Select bgLess mb-0 menuLangChanger"--}}
+{{--                                    onchange="location = this.value;">--}}
+{{--                                @foreach ($LanguageList as $key => $language)--}}
+{{--                                    <option value="{{route('changeLanguage',$language->code)}}"--}}
+{{--                                            @if (\Illuminate\Support\Facades\Auth::user()->language_code == $language->code) selected @endif>{{ $language->native }}</option>--}}
 
-                                @endforeach
-                            </select>
-                        </div>
-                    @endif
+{{--                                @endforeach--}}
+{{--                            </select>--}}
+{{--                        </div>--}}
+{{--                    @endif--}}
                     <ul class="header_notification_warp d-flex align-items-center">
-                        {{-- Start Notification --}}
+                          Start Notification
                         <li class="scroll_notification_list">
                             <a class="pulse theme_color bell_notification_clicker show_notifications" href="#">
                                 <!-- bell   -->
                                 <i class="fa fa-bell"></i>
 
                                 <!--/ bell   -->
-                                <span class="notification_count">{{Auth::user()->unreadNotifications->count()}}</span>
+{{--                                <span class="notification_count">{{Auth::user()->unreadNotifications->count()}}</span>--}}
                                 <span class="pulse-ring notification_count_pulse"></span>
                             </a>
                             <!-- Menu_NOtification_Wrap  -->
@@ -82,23 +84,23 @@
                                 </div>
                                 <div class="Notification_body">
                                     <!-- single_notify  -->
-                                    @forelse (Auth::user()->unreadNotifications as $notification)
-                                        <div class="single_notify d-flex align-items-center"
-                                             id="menu_notification_show_{{$notification->id}}">
-                                            <div class="notify_thumb">
-                                                <i class="fa fa-bell"></i>
-                                            </div>
-                                            <a href="#" class="unread_notification" title="Mark As Read"
-                                               data-notification_id="{{$notification->id}}">
-                                                <div class="notify_content">
-                                                    <h5>{!!  strip_tags(\Illuminate\Support\Str::limit(@$notification->data['title'], 30, $end='...')) !!}</h5>
-                                                    <p>{!!  strip_tags(\Illuminate\Support\Str::limit(@$notification->data['body'], 70, $end='...')) !!}</p>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    @empty
-                                        <span class="text-center">{{__('common.No Unread Notification')}}</span>
-                                    @endforelse
+{{--                                    @forelse (Auth::user()->unreadNotifications as $notification)--}}
+{{--                                        <div class="single_notify d-flex align-items-center"--}}
+{{--                                             id="menu_notification_show_{{$notification->id}}">--}}
+{{--                                            <div class="notify_thumb">--}}
+{{--                                                <i class="fa fa-bell"></i>--}}
+{{--                                            </div>--}}
+{{--                                            <a href="#" class="unread_notification" title="Mark As Read"--}}
+{{--                                               data-notification_id="{{$notification->id}}">--}}
+{{--                                                <div class="notify_content">--}}
+{{--                                                    <h5>{!!  strip_tags(\Illuminate\Support\Str::limit(@$notification->data['title'], 30, $end='...')) !!}</h5>--}}
+{{--                                                    <p>{!!  strip_tags(\Illuminate\Support\Str::limit(@$notification->data['body'], 70, $end='...')) !!}</p>--}}
+{{--                                                </div>--}}
+{{--                                            </a>--}}
+{{--                                        </div>--}}
+{{--                                    @empty--}}
+{{--                                        <span class="text-center">{{__('common.No Unread Notification')}}</span>--}}
+{{--                                    @endforelse--}}
 
                                 </div>
                                 <div class="nofity_footer">
@@ -112,43 +114,43 @@
                             </div>
                             <!--/ Menu_NOtification_Wrap  -->
                         </li>
-                        {{-- End Notification --}}
-                        @if (permissionCheck('communication.PrivateMessage'))
-                            <li class="scroll_notification_list">
-                                <a class="pulse theme_color"
-                                   href="{{ route('communication.PrivateMessage') }}">
-                                    <!-- bell   -->
-                                    <i class="far fa-comment"></i>
-                                    <span class="notification_count">{{$totalMessage}}  </span>
-                                    @if($totalMessage>0)
-                                        <span class="pulse-ring notification_count_pulse"></span>
-                                    @endif
-                                </a>
-                            </li>
-                        @endif
+                          End Notification
+{{--                        @if (permissionCheck('communication.PrivateMessage'))--}}
+{{--                            <li class="scroll_notification_list">--}}
+{{--                                <a class="pulse theme_color"--}}
+{{--                                   href="{{ route('communication.PrivateMessage') }}">--}}
+{{--                                    <!-- bell   -->--}}
+{{--                                    <i class="far fa-comment"></i>--}}
+{{--                                    <span class="notification_count">{{$totalMessage}}  </span>--}}
+{{--                                    @if($totalMessage>0)--}}
+{{--                                        <span class="pulse-ring notification_count_pulse"></span>--}}
+{{--                                    @endif--}}
+{{--                                </a>--}}
+{{--                            </li>--}}
+{{--                        @endif--}}
 
-                        @if(isModuleActive('Chat'))
-                            <li class="scroll_notification_list">
-                                @if(env('BROADCAST_DRIVER') == null)
-                                    <jquery-notification-component
-                                        :loaded_unreads="{{ json_encode($notifications_for_chat) }}"
-                                        :user_id="{{ json_encode(auth()->id()) }}"
-                                        :redirect_url="{{ json_encode(route('chat.index')) }}"
-                                        :check_new_notification_url="{{ json_encode(route('chat.notification.check')) }}"
-                                        :asset_type="{{ json_encode('/public') }}"
-                                        :mark_all_as_read_url="{{ json_encode(route('chat.notification.allRead')) }}"
-                                    ></jquery-notification-component>
-                                @else
-                                    <notification-component
-                                        :loaded_unreads="{{ json_encode($notifications_for_chat) }}"
-                                        :user_id="{{ json_encode(auth()->id()) }}"
-                                        :redirect_url="{{ json_encode(route('chat.index')) }}"
-                                        :asset_type="{{ json_encode('/public') }}"
-                                        :mark_all_as_read_url="{{ json_encode(route('chat.notification.allRead')) }}"
-                                    ></notification-component>
-                                @endif
-                            </li>
-                        @endif
+{{--                        @if(isModuleActive('Chat'))--}}
+{{--                            <li class="scroll_notification_list">--}}
+{{--                                @if(env('BROADCAST_DRIVER') == null)--}}
+{{--                                    <jquery-notification-component--}}
+{{--                                        :loaded_unreads="{{ json_encode($notifications_for_chat) }}"--}}
+{{--                                        :user_id="{{ json_encode(auth()->id()) }}"--}}
+{{--                                        :redirect_url="{{ json_encode(route('chat.index')) }}"--}}
+{{--                                        :check_new_notification_url="{{ json_encode(route('chat.notification.check')) }}"--}}
+{{--                                        :asset_type="{{ json_encode('/public') }}"--}}
+{{--                                        :mark_all_as_read_url="{{ json_encode(route('chat.notification.allRead')) }}"--}}
+{{--                                    ></jquery-notification-component>--}}
+{{--                                @else--}}
+{{--                                    <notification-component--}}
+{{--                                        :loaded_unreads="{{ json_encode($notifications_for_chat) }}"--}}
+{{--                                        :user_id="{{ json_encode(auth()->id()) }}"--}}
+{{--                                        :redirect_url="{{ json_encode(route('chat.index')) }}"--}}
+{{--                                        :asset_type="{{ json_encode('/public') }}"--}}
+{{--                                        :mark_all_as_read_url="{{ json_encode(route('chat.notification.allRead')) }}"--}}
+{{--                                    ></notification-component>--}}
+{{--                                @endif--}}
+{{--                            </li>--}}
+{{--                        @endif--}}
 
                     </ul>
                     <div class="profile_info">

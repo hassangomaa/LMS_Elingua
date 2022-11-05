@@ -1,7 +1,7 @@
 <div>
     <div class="primary_input planSelection" wire:ignore>
         <select class="primary_select studentPositionSelect width_200" wire:model="plan"
-            {{--                wire:change="selectPlan"--}}
+                             wire:change="selectPlan" 
         >
             <option value="">{{__('org-subscription.Filter by Plan')}}</option>
 

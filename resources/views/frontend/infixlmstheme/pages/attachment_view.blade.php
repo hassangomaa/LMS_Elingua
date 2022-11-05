@@ -44,7 +44,7 @@
                     </div>
                 @endif
                 <div class="mt-40 d-flex justify-content-between" style="margin-top: 40px;">
-                        {{-- <button type="button" class="primary-btn tr-bg" data-dismiss="modal">@lang('lang.cancel')</button> --}}
+                          <button type="button" class="primary-btn tr-bg" data-dismiss="modal">@lang('lang.cancel')</button>  
                     @php
                         $set_filename=time().'_'.$std_file;
                     @endphp
@@ -52,7 +52,7 @@
                         
                     <a class="link_value theme_btn small_btn4" download="{{$set_filename}}" href="{{asset($attached_file)}}"> <span class="pl ti-download"> {{__('common.Download')}}</span></a> 
                     @endif
-                        {{-- {{route('download-uploaded-content-admin',$uploadedContent->id)}} --}}
+                          {{route('download-uploaded-content-admin',$uploadedContent->id)}}  
                 
                        
                     </div>

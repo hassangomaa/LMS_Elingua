@@ -12,9 +12,9 @@
             <li><a href="<?php echo e(route('virtual-class.index')); ?>">  <?php echo e(__('virtual-class.Class List')); ?></a></li>
         <?php endif; ?>
         <?php if(permissionCheck('virtual-class.setting')): ?>
-
-
-
+             <li> 
+                 <a href="<?php echo e(route('virtual-class.setting')); ?>">  <?php echo e(__('virtual-class.Class Setting')); ?></a> 
+             </li> 
         <?php endif; ?>
     </ul>
 </li>

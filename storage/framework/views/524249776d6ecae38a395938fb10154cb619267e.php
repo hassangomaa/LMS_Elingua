@@ -3,57 +3,189 @@
 <?php $__env->startSection('js'); ?> <?php $__env->stopSection(); ?>
 
 <?php $__env->startSection('mainContent'); ?>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+     <?php $__currentLoopData = $blocks; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $block): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+         <?php if($block->id==1): ?>
+                 <?php if (isset($component)) { $__componentOriginal9aedac9f21e8a79aabb4050843e5bb2034a877a3 = $component; } ?>
+<?php $component = $__env->getContainer()->make(App\View\Components\HomePageBanner::class, ['homeContent' => $homeContent]); ?>
+<?php $component->withName('home-page-banner'); ?>
+<?php if ($component->shouldRender()): ?>
+<?php $__env->startComponent($component->resolveView(), $component->data()); ?>
+<?php $component->withAttributes([]); ?>
+<?php echo $__env->renderComponent(); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginal9aedac9f21e8a79aabb4050843e5bb2034a877a3)): ?>
+<?php $component = $__componentOriginal9aedac9f21e8a79aabb4050843e5bb2034a877a3; ?>
+<?php unset($__componentOriginal9aedac9f21e8a79aabb4050843e5bb2034a877a3); ?>
+<?php endif; ?>
+         <?php elseif($block->id==3): ?>
+             <?php if(1): ?>
+                 <?php if (isset($component)) { $__componentOriginalea5d2a1586e47925aa52b8f815ed55fcafd55305 = $component; } ?>
+<?php $component = $__env->getContainer()->make(App\View\Components\HomePageCategorySection::class, ['homeContent' => $homeContent,'categories' => $categories]); ?>
+<?php $component->withName('home-page-category-section'); ?>
+<?php if ($component->shouldRender()): ?>
+<?php $__env->startComponent($component->resolveView(), $component->data()); ?>
+<?php $component->withAttributes([]); ?>
+<?php echo $__env->renderComponent(); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginalea5d2a1586e47925aa52b8f815ed55fcafd55305)): ?>
+<?php $component = $__componentOriginalea5d2a1586e47925aa52b8f815ed55fcafd55305; ?>
+<?php unset($__componentOriginalea5d2a1586e47925aa52b8f815ed55fcafd55305); ?>
+<?php endif; ?>
+             <?php endif; ?>
+         <?php elseif($block->id==4): ?>
+             <?php if(1): ?>
+                 <?php if (isset($component)) { $__componentOriginal006b93ab26a391720620ee988b0e18691271bc28 = $component; } ?>
+<?php $component = $__env->getContainer()->make(App\View\Components\HomePageInstructorSection::class, ['homeContent' => $homeContent]); ?>
+<?php $component->withName('home-page-instructor-section'); ?>
+<?php if ($component->shouldRender()): ?>
+<?php $__env->startComponent($component->resolveView(), $component->data()); ?>
+<?php $component->withAttributes([]); ?>
+<?php echo $__env->renderComponent(); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginal006b93ab26a391720620ee988b0e18691271bc28)): ?>
+<?php $component = $__componentOriginal006b93ab26a391720620ee988b0e18691271bc28; ?>
+<?php unset($__componentOriginal006b93ab26a391720620ee988b0e18691271bc28); ?>
+<?php endif; ?>
+             <?php endif; ?>
+         <?php elseif($block->id==5): ?>
+             <?php if(1): ?>
+                 <?php if (isset($component)) { $__componentOriginalfb6ad4f44f74f604fe11dfd73304325fce169b7f = $component; } ?>
+<?php $component = $__env->getContainer()->make(App\View\Components\HomePageCourseSection::class, ['homeContent' => $homeContent]); ?>
+<?php $component->withName('home-page-course-section'); ?>
+<?php if ($component->shouldRender()): ?>
+<?php $__env->startComponent($component->resolveView(), $component->data()); ?>
+<?php $component->withAttributes([]); ?>
+<?php echo $__env->renderComponent(); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginalfb6ad4f44f74f604fe11dfd73304325fce169b7f)): ?>
+<?php $component = $__componentOriginalfb6ad4f44f74f604fe11dfd73304325fce169b7f; ?>
+<?php unset($__componentOriginalfb6ad4f44f74f604fe11dfd73304325fce169b7f); ?>
+<?php endif; ?>
+             <?php endif; ?>
+         <?php elseif($block->id==6): ?>
+             <?php if(1): ?>
+                 <?php if (isset($component)) { $__componentOriginald572d628dcf433b01eb7725f5af69719aaa8a5dd = $component; } ?>
+<?php $component = $__env->getContainer()->make(App\View\Components\HomePageBestCategorySection::class, ['homeContent' => $homeContent,'categories' => $categories]); ?>
+<?php $component->withName('home-page-best-category-section'); ?>
+<?php if ($component->shouldRender()): ?>
+<?php $__env->startComponent($component->resolveView(), $component->data()); ?>
+<?php $component->withAttributes([]); ?>
+<?php echo $__env->renderComponent(); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginald572d628dcf433b01eb7725f5af69719aaa8a5dd)): ?>
+<?php $component = $__componentOriginald572d628dcf433b01eb7725f5af69719aaa8a5dd; ?>
+<?php unset($__componentOriginald572d628dcf433b01eb7725f5af69719aaa8a5dd); ?>
+<?php endif; ?>
+             <?php endif; ?>
+         <?php elseif($block->id==7): ?>
+             <?php if(1): ?>
+                 <?php if (isset($component)) { $__componentOriginalf2b7038885d042a4acde111db47396b303c8133f = $component; } ?>
+<?php $component = $__env->getContainer()->make(App\View\Components\HomePageQuizSection::class, ['homeContent' => $homeContent]); ?>
+<?php $component->withName('home-page-quiz-section'); ?>
+<?php if ($component->shouldRender()): ?>
+<?php $__env->startComponent($component->resolveView(), $component->data()); ?>
+<?php $component->withAttributes([]); ?>
+<?php echo $__env->renderComponent(); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginalf2b7038885d042a4acde111db47396b303c8133f)): ?>
+<?php $component = $__componentOriginalf2b7038885d042a4acde111db47396b303c8133f; ?>
+<?php unset($__componentOriginalf2b7038885d042a4acde111db47396b303c8133f); ?>
+<?php endif; ?>
+             <?php endif; ?>
+         <?php elseif($block->id==8): ?>
+             <?php if(1): ?>
+                 <?php if (isset($component)) { $__componentOriginal70c7da8405f2e39cb7dcb8b493b1dbbf416181a0 = $component; } ?>
+<?php $component = $__env->getContainer()->make(App\View\Components\HomePageTestimonialSection::class, ['homeContent' => $homeContent]); ?>
+<?php $component->withName('home-page-testimonial-section'); ?>
+<?php if ($component->shouldRender()): ?>
+<?php $__env->startComponent($component->resolveView(), $component->data()); ?>
+<?php $component->withAttributes([]); ?>
+<?php echo $__env->renderComponent(); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginal70c7da8405f2e39cb7dcb8b493b1dbbf416181a0)): ?>
+<?php $component = $__componentOriginal70c7da8405f2e39cb7dcb8b493b1dbbf416181a0; ?>
+<?php unset($__componentOriginal70c7da8405f2e39cb7dcb8b493b1dbbf416181a0); ?>
+<?php endif; ?>
+             <?php endif; ?>
+         <?php elseif($block->id==9): ?>
+             <?php if(1): ?>
+                 <?php if (isset($component)) { $__componentOriginal61837c59abe8fb642af550960c9566d04596f0b9 = $component; } ?>
+<?php $component = $__env->getContainer()->make(App\View\Components\HomePageBrandSection::class, ['homeContent' => $homeContent]); ?>
+<?php $component->withName('home-page-brand-section'); ?>
+<?php if ($component->shouldRender()): ?>
+<?php $__env->startComponent($component->resolveView(), $component->data()); ?>
+<?php $component->withAttributes([]); ?>
+<?php echo $__env->renderComponent(); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginal61837c59abe8fb642af550960c9566d04596f0b9)): ?>
+<?php $component = $__componentOriginal61837c59abe8fb642af550960c9566d04596f0b9; ?>
+<?php unset($__componentOriginal61837c59abe8fb642af550960c9566d04596f0b9); ?>
+<?php endif; ?>
+             <?php endif; ?>
+         <?php elseif($block->id==10): ?>
+             <?php if(1): ?>
+                 <?php if (isset($component)) { $__componentOriginal4dc2d0749fcc0069229e178673395a9b1ed67c12 = $component; } ?>
+<?php $component = $__env->getContainer()->make(App\View\Components\HomePageBlogSection::class, ['homeContent' => $homeContent]); ?>
+<?php $component->withName('home-page-blog-section'); ?>
+<?php if ($component->shouldRender()): ?>
+<?php $__env->startComponent($component->resolveView(), $component->data()); ?>
+<?php $component->withAttributes([]); ?>
+<?php echo $__env->renderComponent(); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginal4dc2d0749fcc0069229e178673395a9b1ed67c12)): ?>
+<?php $component = $__componentOriginal4dc2d0749fcc0069229e178673395a9b1ed67c12; ?>
+<?php unset($__componentOriginal4dc2d0749fcc0069229e178673395a9b1ed67c12); ?>
+<?php endif; ?>
+             <?php endif; ?>
+         <?php elseif($block->id==11): ?>
+             <?php if(1): ?>
+                 <?php if(@Settings('instructor_reg') ): ?>
+                     <?php if (isset($component)) { $__componentOriginal3fa6c0e2c5f39c1e50763fd178f9ceaec8b9a27e = $component; } ?>
+<?php $component = $__env->getContainer()->make(App\View\Components\HomePageBecomeInstructorSection::class, ['homeContent' => $homeContent]); ?>
+<?php $component->withName('home-page-become-instructor-section'); ?>
+<?php if ($component->shouldRender()): ?>
+<?php $__env->startComponent($component->resolveView(), $component->data()); ?>
+<?php $component->withAttributes([]); ?>
+<?php echo $__env->renderComponent(); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginal3fa6c0e2c5f39c1e50763fd178f9ceaec8b9a27e)): ?>
+<?php $component = $__componentOriginal3fa6c0e2c5f39c1e50763fd178f9ceaec8b9a27e; ?>
+<?php unset($__componentOriginal3fa6c0e2c5f39c1e50763fd178f9ceaec8b9a27e); ?>
+<?php endif; ?>
+                 <?php endif; ?>
+             <?php endif; ?>
+         <?php elseif($block->id==16): ?>
+             <?php if(1): ?>
+                 <?php if (isset($component)) { $__componentOriginal28df1844665f9036fa7796d902b606ab84df0679 = $component; } ?>
+<?php $component = $__env->getContainer()->make(App\View\Components\HomePageHowToBuy::class, ['homeContent' => $homeContent]); ?>
+<?php $component->withName('home-page-how-to-buy'); ?>
+<?php if ($component->shouldRender()): ?>
+<?php $__env->startComponent($component->resolveView(), $component->data()); ?>
+<?php $component->withAttributes([]); ?>
+<?php echo $__env->renderComponent(); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginal28df1844665f9036fa7796d902b606ab84df0679)): ?>
+<?php $component = $__componentOriginal28df1844665f9036fa7796d902b606ab84df0679; ?>
+<?php unset($__componentOriginal28df1844665f9036fa7796d902b606ab84df0679); ?>
+<?php endif; ?>
+             <?php endif; ?>
+         <?php elseif($block->id==17): ?>
+             <?php if(1): ?>
+                 <?php if (isset($component)) { $__componentOriginald27eb0bd2c0120573fd032674aca228ad97c3550 = $component; } ?>
+<?php $component = $__env->getContainer()->make(App\View\Components\HomePageFaq::class, ['homeContent' => $homeContent]); ?>
+<?php $component->withName('home-page-faq'); ?>
+<?php if ($component->shouldRender()): ?>
+<?php $__env->startComponent($component->resolveView(), $component->data()); ?>
+<?php $component->withAttributes([]); ?>
+<?php echo $__env->renderComponent(); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginald27eb0bd2c0120573fd032674aca228ad97c3550)): ?>
+<?php $component = $__componentOriginald27eb0bd2c0120573fd032674aca228ad97c3550; ?>
+<?php unset($__componentOriginald27eb0bd2c0120573fd032674aca228ad97c3550); ?>
+<?php endif; ?>
+             <?php endif; ?>
+         <?php endif; ?>
+     <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
 
     <!-- Carousel Start -->
     <div class="container-fluid p-0 mb-5">

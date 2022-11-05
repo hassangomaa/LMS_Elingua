@@ -43,9 +43,9 @@
         <?php if(permissionCheck('frontend.testimonials')): ?>
             <li><a href="<?php echo e(route('frontend.testimonials')); ?>"> <?php echo e(__('frontendmanage.Testimonials')); ?></a></li>
         <?php endif; ?>
-        
-        
-        
+                 <?php if(permissionCheck('frontend.sectionSetting')): ?> 
+                     <li><a href="<?php echo e(route('frontend.sectionSetting')); ?>"> <?php echo e(__('frontendmanage.Section Setting')); ?></a></li> 
+                 <?php endif; ?> 
         <?php if(permissionCheck('frontend.socialSetting')): ?>
             <li><a href="<?php echo e(route('frontend.socialSetting')); ?>"> <?php echo e(__('frontendmanage.Social Setting')); ?></a></li>
         <?php endif; ?>
@@ -75,11 +75,11 @@
             </li>
         <?php endif; ?>
 
-
-
-
-
-
+         <?php if(permissionCheck('footerSetting.footer.index')): ?> 
+             <li> 
+                 <a href="<?php echo e(route('footerSetting.footer.index')); ?>"><?php echo e(__('setting.Footer Setting')); ?></a> 
+             </li> 
+         <?php endif; ?> 
 
 
         <?php if(permissionCheck('frontend.loginpage.index')): ?>

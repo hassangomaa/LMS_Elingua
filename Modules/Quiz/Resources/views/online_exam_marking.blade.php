@@ -184,9 +184,9 @@
                                                         @endphp
                                                     @endforeach
                                                     <input type="hidden" name="quizTestId" value="{{$quizTest->id}}">
-{{--                                                    <input type="hidden" name="quiz" value="{{$data['quiz']}}">--}}
-{{--                                                    <input type="hidden" name="course" value="{{$data['course']}}">--}}
-{{--                                                    <input type="hidden" name="status" value="{{$data['status']}}">--}}
+                                                     <input type="hidden" name="quiz" value="{{$data['quiz']}}"> 
+                                                     <input type="hidden" name="course" value="{{$data['course']}}"> 
+                                                     <input type="hidden" name="status" value="{{$data['status']}}"> 
                                                 @endif
                                             </div>
 

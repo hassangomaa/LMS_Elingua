@@ -56,7 +56,7 @@
                                             <tbody>
                                             @if(isset($assignment_list))
                                                 @foreach ($assignment_list as $key=>$assign)
-                                                {{-- @dd($certificate) --}}
+                                                  @dd($certificate)  
                                                     <tr>
                                                         <td scope="row">{{@$key+1}}</td>
 
@@ -86,11 +86,11 @@
                                                                     {{__('assignment.History')}}
                                                                 </a>
                                                             @endif
-                                                            {{-- @if ($assign->pass_status!=1) --}}
+                                                              @if ($assign->pass_status!=1)  
                                                                 <a  href="{{route('myAssignment_details',$assign->id)}}" class="link_value theme_btn small_btn4">{{__('common.Details')}}</a>
-                                                            {{-- @endif --}}
+                                                              @endif  
                                                         <td>
-                                                        {{-- @dd($assign->assignmentSubmitted) --}}
+                                                          @dd($assign->assignmentSubmitted)  
                                                     </tr>
                                                     <tr>
                                                         <td colspan="5">

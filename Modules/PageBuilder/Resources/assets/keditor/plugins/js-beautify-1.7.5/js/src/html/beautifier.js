@@ -621,7 +621,7 @@ function Beautifier(html_source, options, js_beautify, css_beautify) {
                         delimiter = '-->';
                         matched = true;
                     } else if (comment.indexOf('{{!--') === 0) { // {{!-- handlebars comment
-                        delimiter = '--}}';
+                        delimiter = ' ';
                         matched = true;
                     } else if (comment.indexOf('{{!') === 0) { // {{! handlebars comment
                         if (comment.length === 5 && comment.indexOf('{{!--') === -1) {

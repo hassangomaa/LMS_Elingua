@@ -12,9 +12,9 @@
             <li><a href="{{ route('virtual-class.index') }}">  {{__('virtual-class.Class List')}}</a></li>
         @endif
         @if (permissionCheck('virtual-class.setting'))
-{{--            <li>--}}
-{{--                <a href="{{ route('virtual-class.setting') }}">  {{__('virtual-class.Class Setting')}}</a>--}}
-{{--            </li>--}}
+             <li> 
+                 <a href="{{ route('virtual-class.setting') }}">  {{__('virtual-class.Class Setting')}}</a> 
+             </li> 
         @endif
     </ul>
 </li>

@@ -87,11 +87,11 @@
                                                 </button>
                                                 <div class="dropdown-menu dropdown-menu-right"
                                                      aria-labelledby="dropdownMenu2">
-                                                    {{--                                                    <a class="dropdown-item"--}}
-                                                    {{--                                                       href="{{ route('zoom.meetings.show', $meeting->meeting_id) }}">{{__('zoom.View')}}</a>--}}
+                                                                                                         <a class="dropdown-item" 
+                                                                                                            href="{{ route('zoom.meetings.show', $meeting->meeting_id) }}">{{__('zoom.View')}}</a> 
                                                     @if($meeting->created_by==$user->id)
-                                                        {{--                                                        <a class="dropdown-item"--}}
-                                                        {{--                                                           href="{{ route('zoom.meetings.edit',$meeting->id )}}">{{__('zoom.Edit')}}</a>--}}
+                                                                                                                 <a class="dropdown-item" 
+                                                                                                                    href="{{ route('zoom.meetings.edit',$meeting->id )}}">{{__('zoom.Edit')}}</a> 
 
                                                         <a class="dropdown-item" data-toggle="modal"
                                                            data-target="#d{{$meeting->id}}"

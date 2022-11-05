@@ -181,7 +181,7 @@ class StudentController extends Controller
         try {
             $user = Auth::user();
             $fileName = "";
-            if ($request->file('file') != "") { 
+            if ($request->file('file') != "") {
                 $user->image =$this->saveImage($request->file('file'));
             }
             $user->save();
@@ -267,7 +267,7 @@ class StudentController extends Controller
             $user->youtube = $request->youtube;
             $user->headline = $request->headline;
             $user->about = $request->about;
-           
+
             if ($request->file('image') != "") {
              $user->image = $this->saveImage($request->file('image'));
             }
@@ -329,7 +329,7 @@ class StudentController extends Controller
             $login = UserLogin::where('user_id', Auth::id())->where('status', 1)->latest()->first();
             if ($login) {
                 $login->status = 0;
-                $login->logout_at = Carbon::now(Settings('active_time_zone'));
+                $login->logout_at = "";
                 $login->save();
             }
 

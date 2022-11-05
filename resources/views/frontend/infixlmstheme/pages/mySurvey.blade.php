@@ -51,7 +51,7 @@
                                             <tr>
                                                 <th scope="col">{{__('common.SL')}}</th>
                                                 <th scope="col">{{__('common.Name')}}</th>
-{{--                                                <th scope="col">{{ __('student.Group') }}</th>--}}
+                                                 <th scope="col">{{ __('student.Group') }}</th> 
                                                 <th scope="col">{{ __('courses.Course') }}</th>
                                                 <th scope="col">Survey For</th>
                                                 <th scope="col">{{__('common.Action')}}</th>
@@ -68,7 +68,7 @@
                                                     <tr>
                                                         <td scope="col">{{ $index+1 }}</td>
                                                         <td scope="col">{{ $survey->survey->title }}</td>
-{{--                                                        <td scope="col">{{ $survey->survey->group->name }}</td>--}}
+                                                         <td scope="col">{{ $survey->survey->group->name }}</td> 
                                                         <td scope="col">{{ $survey->survey->course->title }}</td>
                                                         <td scope="col">{{ $survey->survey->available_for }}</td>
 

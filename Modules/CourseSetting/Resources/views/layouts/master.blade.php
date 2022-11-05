@@ -6,14 +6,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Module CourseSetting</title>
 
-       {{-- Laravel Mix - CSS File --}}
-       {{-- <link rel="stylesheet" href="{{ mix('css/coursesetting.css') }}"> --}}
+         Laravel Mix - CSS File  
+         <link rel="stylesheet" href="{{ mix('css/coursesetting.css') }}">  
 
     </head>
     <body>
         @yield('content')
 
-        {{-- Laravel Mix - JS File --}}
-        {{-- <script src="{{ mix('js/coursesetting.js') }}"></script> --}}
+          Laravel Mix - JS File  
+          <script src="{{ mix('js/coursesetting.js') }}"></script>  
     </body>
 </html>

@@ -210,9 +210,9 @@
                                         </div>
                                     @endif
                                 </div>
-                                {{--                                @if(round($course->loginUserTotalPercentage) < 100 && $plan->sequence == 1 )--}}
-                                {{--                                    @break--}}
-                                {{--                                @endif--}}
+                                                                 @if(round($course->loginUserTotalPercentage) < 100 && $plan->sequence == 1 ) 
+                                                                     @break 
+                                                                 @endif 
                             @endforeach
                         @endif
                         @if(count($courses)==0)

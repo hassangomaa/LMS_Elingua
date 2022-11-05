@@ -6,18 +6,8 @@
 <?php $__env->stopSection(); ?>
 <?php $__env->startSection('mainContent'); ?>
 
-    <?php if (isset($component)) { $__componentOriginal40fe594eae3d7d27fa8bd9a508c1498f43cae280 = $component; } ?>
-<?php $component = $__env->getContainer()->make(App\View\Components\Breadcrumb::class, ['banner' => $frontendContent->course_page_banner,'title' => $frontendContent->course_page_title,'subTitle' => $frontendContent->course_page_sub_title]); ?>
-<?php $component->withName('breadcrumb'); ?>
-<?php if ($component->shouldRender()): ?>
-<?php $__env->startComponent($component->resolveView(), $component->data()); ?>
-<?php $component->withAttributes([]); ?>
-<?php echo $__env->renderComponent(); ?>
-<?php endif; ?>
-<?php if (isset($__componentOriginal40fe594eae3d7d27fa8bd9a508c1498f43cae280)): ?>
-<?php $component = $__componentOriginal40fe594eae3d7d27fa8bd9a508c1498f43cae280; ?>
-<?php unset($__componentOriginal40fe594eae3d7d27fa8bd9a508c1498f43cae280); ?>
-<?php endif; ?>
+
+
 
     <?php if (isset($component)) { $__componentOriginal3a5e00c35df92ba00166354818816394acac10fd = $component; } ?>
 <?php $component = $__env->getContainer()->make(App\View\Components\CoursePageSection::class, ['request' => $request,'categories' => $categories,'languages' => $languages]); ?>

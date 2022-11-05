@@ -83,7 +83,7 @@
                     @endif
                 </div>
 
-                {{-- Start New Create --}}
+                  Start New Create  
              <div class="mt-20" id="new_quiz{{@$key}}" style="display: none">
                 <div class="row" style="visibility: hidden">
                     <div class="col-lg-12">
@@ -151,7 +151,7 @@
                     </div>
                 </div>
              </div>
-                {{-- End New Create --}}
+                  End New Create  
                
                 <div class="input-effect mt-2 pt-1">
                     <div class=" " id="">

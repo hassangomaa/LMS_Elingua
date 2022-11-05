@@ -78,4 +78,5 @@
 
 <!-- Page Content  -->
     <div id="main-content">
-@include('backend.partials.menu')
+
+{{--@include('backend.partials.menu')--}}

@@ -60,9 +60,9 @@
                                 <div class="primary_input mb-25">
                                     <label class="primary_input_label" for="">{{ __('department.Department') }}</label>
                                     <select class="primary_select mb-25" name="department_id" id="department_id" required>
-                                        @foreach (\Modules\UserManage\Entities\Department::all() as $key => $department)
-                                            <option value="{{ $department->id }}">{{ $department->name }}</option>
-                                        @endforeach
+{{--                                        @foreach (\Modules\UserManage\Entities\Department::all() as $key => $department)--}}
+{{--                                            <option value="{{ $department->id }}">{{ $department->name }}</option>--}}
+{{--                                        @endforeach--}}
                                         <option value="1">Department 1</option>
                                         <option value="2">Department 2</option>
                                     </select>
@@ -73,9 +73,9 @@
                                 <div class="primary_input mb-25">
                                     <label class="primary_input_label" for="">{{ __('inventory.Warehouse') }}</label>
                                     <select class="primary_select mb-25" name="warehouse_id" id="" >
-                                        @foreach (\Modules\Inventory\Entities\Warehouse::all() as $key => $warehouse)
-                                            <option value="{{ $warehouse->id }}">{{ $warehouse->name }}</option>
-                                        @endforeach
+{{--                                        @foreach (\Modules\Inventory\Entities\Warehouse::all() as $key => $warehouse)--}}
+{{--                                            <option value="{{ $warehouse->id }}">{{ $warehouse->name }}</option>--}}
+{{--                                        @endforeach--}}
                                     </select>
                                 </div>
                             </div>

@@ -21,7 +21,7 @@
     margin-bottom: 65px !important;
 }
 </style>
-{{-- {!! $certificate !!} --}}
+  {!! $certificate !!}  
 
     <div class="contact_section ">
         <div class="container">
@@ -50,7 +50,7 @@
                                                 </form>
                                             </div>
                                         </div>
-                                        {{-- <img class="img-rounded" src="{{$certificate}}" alt=""> --}}
+                                          <img class="img-rounded" src="{{$certificate}}" alt="">  
                                         <div class="message text-center">
                                             @if($errors->any())
                                                 <h4 class="text-danger">{{__('certificate.Invalid Certificate Number')}}</h4>

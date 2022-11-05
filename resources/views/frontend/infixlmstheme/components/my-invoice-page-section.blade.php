@@ -139,7 +139,7 @@
                                         </th>
                                         <th colspan="2" scope="col"
                                             class="black_color">{{__('student.Course name')}}</th>
-                                        {{--                                        <th scope="col" class="black_color">{{__('common.Discount')}}</th>--}}
+                                                                                 <th scope="col" class="black_color">{{__('common.Discount')}}</th> 
                                         <th scope="col" class="black_color">{{__('student.Price')}}</th>
                                     </tr>
                                     </thead>
@@ -160,12 +160,12 @@
                                                     <h5 class="black_color">   {{@$item->course->title}}</h5>
 
                                                 </td>
-                                                {{--                                                <td class="black_color">--}}
-                                                {{--                                                    @if($item->course->discount_price!=0)--}}
-                                                {{--                                                        {{getPriceFormat($item->course->discount_price)}}--}}
-                                                {{--                                                    @endif--}}
+                                                                                                 <td class="black_color"> 
+                                                                                                     @if($item->course->discount_price!=0) 
+                                                                                                         {{getPriceFormat($item->course->discount_price)}} 
+                                                                                                     @endif 
 
-                                                {{--                                                </td>--}}
+                                                                                                 </td> 
                                                 <td class="black_color">
                                                     {{getPriceFormat($item->course->price)}}
                                                 </td>

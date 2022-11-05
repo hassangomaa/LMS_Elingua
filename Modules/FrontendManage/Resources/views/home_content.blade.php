@@ -1743,7 +1743,7 @@
                                                     </div>
 
                                                 </div>
-                                                {{--                                            @elseif($block->id==15 && isModuleActive('Subscription') && Settings('frontend_active_theme')=='compact')--}}
+                                                                                             @elseif($block->id==15 && isModuleActive('Subscription') && Settings('frontend_active_theme')=='compact') 
                                             @elseif($block->id==15)
                                                 <div data-id="{{$block->id}}" class="row">
                                                     <div class="accordion" id="accordionHomeContent">
@@ -1854,7 +1854,7 @@
                                                     </div>
 
                                                 </div>
-                                                {{-- End Compact Theme --}}
+                                                  End Compact Theme  
 
                                             @elseif($block->id==5)
                                                 <div data-id="{{$block->id}}" class="row">

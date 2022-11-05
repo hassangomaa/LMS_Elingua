@@ -92,5 +92,6 @@
 
 <!-- Page Content  -->
     <div id="main-content">
-<?php echo $__env->make('backend.partials.menu', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+        
+
 <?php /**PATH /home/hassangomaa/Documents/Laravel_projects/noLicenceLMS/LMS_Elingua/resources/views/backend/partials/header.blade.php ENDPATH**/ ?>

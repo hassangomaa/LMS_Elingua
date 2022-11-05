@@ -455,7 +455,7 @@
                                                                     @endif
                                                                 </div>
                                                             </div>
-                                                            {{--                                                            SCORM--}}
+                                                                                                                         SCORM 
                                                             <div class="input-effect mt-2 pt-1" id="fileupload"
                                                                  style="display: @if((isset($editLesson) && (($editLesson->host=="Vimeo") ||  ($editLesson->host=="Youtube")|| ($editLesson->host=="Iframe")||  ($editLesson->host=="URL")) ) || !isset($editLesson)) none  @endif">
                                                                 <input type="file" class="filepond"
@@ -1298,7 +1298,7 @@
                                                                 <div class="row">
                                                                     <div class="col-xl-12 mt-20">
                                                                         <div class="primary_input">
-                                                                            {{-- <label class="primary_input_label mt-1" for=""> {{__('common.Name')}} </label> --}}
+                                                                              <label class="primary_input_label mt-1" for=""> {{__('common.Name')}} </label>  
                                                                             <input class="primary_input_field"
                                                                                    name="fileName" value="" required
                                                                                    placeholder="{{__('common.File')}} {{__('common.Name')}} *"

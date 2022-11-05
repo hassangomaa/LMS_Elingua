@@ -28,7 +28,7 @@
 
     <link rel="stylesheet" href="{{ asset('public/frontend/infixlmstheme') }}/css/fluidplayer.min.css">
 
-    {{--    <link rel="stylesheet" href="{{asset('public/backend/css/style.css')}}"/>--}}
+         <link rel="stylesheet" href="{{asset('public/backend/css/style.css')}}"/> 
     <link rel="stylesheet" href="{{asset('public/css/preloader.css')}}"/>
 
     <link rel="stylesheet" href="{{ asset('public/frontend/infixlmstheme') }}/css/app.css">
@@ -36,7 +36,7 @@
     <link rel="stylesheet" href="{{ asset('public/frontend/infixlmstheme') }}/css/fontawesome.css ">
     <link rel="stylesheet" href="{{asset('public/backend/css/themify-icons.css')}}"/>
     <script src="{{asset('public/js/common.js')}}"></script>
-    {{--    <script src="{{asset('public/frontend/infixlmstheme/js/app.js')}}"></script>--}}
+         <script src="{{asset('public/frontend/infixlmstheme/js/app.js')}}"></script> 
     @yield('css')
     <script>
         $(document).on("click",".play_toggle_btn",function() {

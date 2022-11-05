@@ -40,7 +40,7 @@
 
                                                             </label>
                                                             {{ __('frontendmanage.Show Recommended Section') }} 
-                                                            {{-- <i class="ti-move  float-right"></i> --}}
+                                                              <i class="ti-move  float-right"></i>  
                                                         </div>
                                                 </div>
                                                 <div class="col-lg-6">
@@ -57,7 +57,7 @@
 
                                                             </label>
                                                             {{ __('frontendmanage.Show Running Course Thumbnail') }} 
-                                                            {{-- <i class="ti-move  float-right"></i> --}}
+                                                              <i class="ti-move  float-right"></i>  
                                                         </div>
                                                 </div>
                                                 

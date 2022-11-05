@@ -99,11 +99,11 @@
                                                 value="{{$course->id}}">{{@$course->title}} </option>
                                         @endforeach
                                     </select>
-                                    {{-- @if ($errors->has('course'))
+                                      @if ($errors->has('course'))
                                         <span class="invalid-feedback d-block mb-10" role="alert">
                                             <strong>{{ @$errors->first('course') }}</strong>
                                         </span>
-                                    @endif --}}
+                                    @endif  
                                 </div>
 
                                 <div class="col-lg-6">
@@ -121,11 +121,11 @@
                                             </button>
                                         </div>
                                     </div>
-                                    {{-- @if ($errors->has('file'))
+                                      @if ($errors->has('file'))
                                     <span class="invalid-feedback d-block mb-10" role="alert">
                                         <strong>{{ @$errors->first('file') }}</strong>
                                     </span>
-                                @endif --}}
+                                @endif  
                                 </div>
 
                             </div>
