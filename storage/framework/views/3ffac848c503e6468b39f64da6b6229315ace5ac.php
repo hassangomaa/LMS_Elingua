@@ -46,30 +46,30 @@
             <?php endif; ?>
 
 
-            <?php if(isModuleActive('LmsSaasMD')): ?>
-                <?php if(!saasPlanCheck('student')): ?>
-                    <?php if(permissionCheck('students')): ?>
-                        <?php echo $__env->make('studentsetting::menu', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
-                    <?php endif; ?>
-                <?php endif; ?>
-            <?php else: ?>
-                <?php if(permissionCheck('students')): ?>
-                    <?php echo $__env->make('studentsetting::menu', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
-                <?php endif; ?>
-            <?php endif; ?>
 
 
-            <?php if(isModuleActive('LmsSaasMD')): ?>
-                <?php if(!saasPlanCheck('instructor')): ?>
-                    <?php if(permissionCheck('instructors')): ?>
-                        <?php echo $__env->make('systemsetting::menu', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
-                    <?php endif; ?>
-                <?php endif; ?>
-            <?php else: ?>
-                <?php if(permissionCheck('instructors')): ?>
-                    <?php echo $__env->make('systemsetting::menu', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
-                <?php endif; ?>
-            <?php endif; ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
             <?php if(isModuleActive('Appointment')): ?>
                 <?php if(permissionCheck('appointment')): ?>
@@ -270,20 +270,21 @@
             <?php endif; ?>
 
 
-            <?php if(isModuleActive('LmsSaasMD')): ?>
-                <?php if(!saasPlanCheck('quiz')): ?>
-                    <?php if(permissionCheck('quiz')): ?>
-                        <?php echo $__env->make('quiz::menu', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
-                    <?php endif; ?>
-                <?php endif; ?>
-            <?php else: ?>
-                <?php if(permissionCheck('quiz')): ?>
-                    <?php echo $__env->make('quiz::menu', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
-                <?php endif; ?>
-            <?php endif; ?>
-            <?php if(permissionCheck('coupons') && function_exists('showEcommerce') && showEcommerce()): ?>
-                <?php echo $__env->make('coupons::menu', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
-            <?php endif; ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
             <?php if(isModuleActive("Homework") && permissionCheck('homework_list')): ?>
                 <?php echo $__env->make('homework::menu', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
@@ -316,9 +317,9 @@
                     </ul>
                 </li>
             <?php endif; ?>
-            <?php if(permissionCheck('payments')  && function_exists('showEcommerce') && showEcommerce()): ?>
-                <?php echo $__env->make('payment::menu', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
-            <?php endif; ?>
+
+
+
 
             <?php if(permissionCheck('reports')): ?>
                 <li>
@@ -378,21 +379,21 @@
                 </li>
             <?php endif; ?>
 
-            <?php if(permissionCheck('certificate.index')): ?>
-                <?php echo $__env->make('certificate::menu', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
-            <?php endif; ?>
 
 
 
 
-            <?php if(permissionCheck('frontend_CMS')): ?>
-                <?php echo $__env->make('frontendmanage::menu', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
-            <?php endif; ?>
 
 
-            <?php if(permissionCheck('zoom')): ?>
-                <?php echo $__env->make('zoom::menu', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
-            <?php endif; ?>
+
+
+
+
+
+
+
+
+
 
 
             <?php if(isModuleActive("BBB")): ?>
@@ -411,12 +412,12 @@
             <?php if(isModuleActive('LmsSaasMD')): ?>
                 <?php if(!saasPlanCheck('meeting')): ?>
                     <?php if(permissionCheck('virtual-class')): ?>
-                        <?php echo $__env->make('virtualclass::menu', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+
                     <?php endif; ?>
                 <?php endif; ?>
             <?php else: ?>
                 <?php if(permissionCheck('virtual-class')): ?>
-                    <?php echo $__env->make('virtualclass::menu', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+
                 <?php endif; ?>
             <?php endif; ?>
 
@@ -424,12 +425,12 @@
             <?php if(isModuleActive('LmsSaasMD')): ?>
                 <?php if(!saasPlanCheck('blog_post')): ?>
                     <?php if(permissionCheck('blog')): ?>
-                        <?php echo $__env->make('blog::menu', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+
                     <?php endif; ?>
                 <?php endif; ?>
             <?php else: ?>
                 <?php if(permissionCheck('blog')): ?>
-                    <?php echo $__env->make('blog::menu', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+
                 <?php endif; ?>
             <?php endif; ?>
 
@@ -478,7 +479,7 @@
                     </ul>
                 </li>
             <?php endif; ?>
-            <?php echo $__env->make('newsletter::menu', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+
 
             <?php if(permissionCheck('appearance.themes.index')): ?>
                 <li>

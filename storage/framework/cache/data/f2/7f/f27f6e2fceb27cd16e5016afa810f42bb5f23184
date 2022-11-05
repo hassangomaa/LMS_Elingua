@@ -1,1 +1,1 @@
-1668181646a:9:{s:4:"name";s:4:"Quiz";s:5:"alias";s:4:"quiz";s:11:"description";s:0:"";s:8:"keywords";a:0:{}s:5:"order";i:0;s:9:"providers";a:1:{i:0;s:42:"Modules\Quiz\Providers\QuizServiceProvider";}s:7:"aliases";a:0:{}s:5:"files";a:0:{}s:8:"requires";a:0:{}}
+1668196662a:9:{s:4:"name";s:4:"Quiz";s:5:"alias";s:4:"quiz";s:11:"description";s:0:"";s:8:"keywords";a:0:{}s:5:"order";i:0;s:9:"providers";a:1:{i:0;s:42:"Modules\Quiz\Providers\QuizServiceProvider";}s:7:"aliases";a:0:{}s:5:"files";a:0:{}s:8:"requires";a:0:{}}

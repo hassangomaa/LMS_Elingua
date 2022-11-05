@@ -46,30 +46,30 @@
             @endif
 
 
-            @if(isModuleActive('LmsSaasMD'))
-                @if(!saasPlanCheck('student'))
-                    @if (permissionCheck('students'))
-                        @include('studentsetting::menu')
-                    @endif
-                @endif
-            @else
-                @if (permissionCheck('students'))
-                    @include('studentsetting::menu')
-                @endif
-            @endif
+{{--            @if(isModuleActive('LmsSaasMD'))--}}
+{{--                @if(!saasPlanCheck('student'))--}}
+{{--                    @if (permissionCheck('students'))--}}
+{{--                        @include('studentsetting::menu')--}}
+{{--                    @endif--}}
+{{--                @endif--}}
+{{--            @else--}}
+{{--                @if (permissionCheck('students'))--}}
+{{--                    @include('studentsetting::menu')--}}
+{{--                @endif--}}
+{{--            @endif--}}
 
 
-            @if(isModuleActive('LmsSaasMD'))
-                @if(!saasPlanCheck('instructor'))
-                    @if (permissionCheck('instructors'))
-                        @include('systemsetting::menu')
-                    @endif
-                @endif
-            @else
-                @if (permissionCheck('instructors'))
-                    @include('systemsetting::menu')
-                @endif
-            @endif
+{{--            @if(isModuleActive('LmsSaasMD'))--}}
+{{--                @if(!saasPlanCheck('instructor'))--}}
+{{--                    @if (permissionCheck('instructors'))--}}
+{{--                        @include('systemsetting::menu')--}}
+{{--                    @endif--}}
+{{--                @endif--}}
+{{--            @else--}}
+{{--                @if (permissionCheck('instructors'))--}}
+{{--                    @include('systemsetting::menu')--}}
+{{--                @endif--}}
+{{--            @endif--}}
 
             @if (isModuleActive('Appointment'))
                 @if (permissionCheck('appointment'))
@@ -263,21 +263,22 @@
                 @include('orgsubscription::menu')
             @endif
 
+{{-- --}}
+{{--            @if(isModuleActive('LmsSaasMD'))--}}
+{{--                @if(!saasPlanCheck('quiz'))--}}
+{{--                    @if (permissionCheck('quiz'))--}}
+{{--                        @include('quiz::menu')--}}
+{{--                    @endif--}}
+{{--                @endif--}}
+{{--            @else--}}
+{{--                @if (permissionCheck('quiz'))--}}
+{{--                    @include('quiz::menu')--}}
+{{--                @endif--}}
+{{--            @endif--}}
 
-            @if(isModuleActive('LmsSaasMD'))
-                @if(!saasPlanCheck('quiz'))
-                    @if (permissionCheck('quiz'))
-                        @include('quiz::menu')
-                    @endif
-                @endif
-            @else
-                @if (permissionCheck('quiz'))
-                    @include('quiz::menu')
-                @endif
-            @endif
-            @if (permissionCheck('coupons') && function_exists('showEcommerce') && showEcommerce())
-                @include('coupons::menu')
-            @endif
+{{--            @if (permissionCheck('coupons') && function_exists('showEcommerce') && showEcommerce())--}}
+{{--                @include('coupons::menu')--}}
+{{--            @endif--}}
 
             @if(isModuleActive("Homework") && permissionCheck('homework_list'))
                 @include('homework::menu')
@@ -310,9 +311,9 @@
                     </ul>
                 </li>
             @endif
-            @if (permissionCheck('payments')  && function_exists('showEcommerce') && showEcommerce())
-                @include('payment::menu')
-            @endif
+{{--            @if (permissionCheck('payments')  && function_exists('showEcommerce') && showEcommerce())--}}
+{{--                @include('payment::menu')--}}
+{{--            @endif--}}
 
             @if (permissionCheck('reports'))
                 <li>
@@ -372,21 +373,21 @@
                 </li>
             @endif
 
-            @if (permissionCheck('certificate.index'))
-                @include('certificate::menu')
-            @endif
+{{--            @if (permissionCheck('certificate.index'))--}}
+{{--                @include('certificate::menu')--}}
+{{--            @endif--}}
 
 
 
 
-            @if (permissionCheck('frontend_CMS'))
-                @include('frontendmanage::menu')
-            @endif
+{{--            @if (permissionCheck('frontend_CMS'))--}}
+{{--                @include('frontendmanage::menu')--}}
+{{--            @endif--}}
 
 
-            @if (permissionCheck('zoom'))
-                @include('zoom::menu')
-            @endif
+{{--            @if (permissionCheck('zoom'))--}}
+{{--                @include('zoom::menu')--}}
+{{--            @endif--}}
 
 
             @if(isModuleActive("BBB"))
@@ -405,12 +406,12 @@
             @if(isModuleActive('LmsSaasMD'))
                 @if(!saasPlanCheck('meeting'))
                     @if (permissionCheck('virtual-class'))
-                        @include('virtualclass::menu')
+{{--                        @include('virtualclass::menu')--}}
                     @endif
                 @endif
             @else
                 @if (permissionCheck('virtual-class'))
-                    @include('virtualclass::menu')
+{{--                    @include('virtualclass::menu')--}}
                 @endif
             @endif
 
@@ -418,12 +419,12 @@
             @if(isModuleActive('LmsSaasMD'))
                 @if(!saasPlanCheck('blog_post'))
                     @if (permissionCheck('blog'))
-                        @include('blog::menu')
+{{--                        @include('blog::menu')--}}
                     @endif
                 @endif
             @else
                 @if (permissionCheck('blog'))
-                    @include('blog::menu')
+{{--                    @include('blog::menu')--}}
                 @endif
             @endif
 
@@ -472,7 +473,7 @@
                     </ul>
                 </li>
             @endif
-            @include('newsletter::menu')
+{{--            @include('newsletter::menu')--}}
 
             @if(permissionCheck('appearance.themes.index'))
                 <li>

@@ -43,7 +43,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-
+//        $this->loadViewsFrom(_DIR_.'/views', 'home');
 
         if (isModuleActive('LmsSaas') || isModuleActive('LmsSaasMD')) {
             $domain = SaasDomain();
