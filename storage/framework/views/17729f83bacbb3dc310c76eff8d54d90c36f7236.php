@@ -29,7 +29,7 @@
     <div class="copyright_area">
         <div class="container">
             <div class="row">
-                                <?php if(!isset($sectionWidgets) || (count($sectionWidgets['one'])==0 && count($sectionWidgets['two'])==0 && count($sectionWidgets['three'])==0 ) ): ?>
+
 
                 <div class="col-xl-4 col-lg-4 col-md-6">
                     <div class="footer_widget">
