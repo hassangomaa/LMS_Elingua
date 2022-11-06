@@ -192,8 +192,8 @@
                                                        class="primary_input_field name{{ $errors->has('percentage') ? ' is-invalid' : '' }}"
                                                        type="number" name="percentage" autocomplete="off"
                                                        value="{{isset($online_exam)? $online_exam->percentage: old('percentage')}}">
-                                                                                                 <input type="hidden" name="id" 
-                                                                                                        value="{{isset($group)? $group->id: ''}}"> 
+                                                                                                 <input type="hidden" name="id"
+{{--                                                                                                        value="{{isset($group)? $group->id: ''}}">--}}
                                                 <span class="focus-border"></span>
                                                 @if ($errors->has('percentage'))
                                                     <span class="invalid-feedback" role="alert">

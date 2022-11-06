@@ -205,8 +205,8 @@
                                                        class="primary_input_field name<?php echo e($errors->has('percentage') ? ' is-invalid' : ''); ?>"
                                                        type="number" name="percentage" autocomplete="off"
                                                        value="<?php echo e(isset($online_exam)? $online_exam->percentage: old('percentage')); ?>">
-                                                                                                 <input type="hidden" name="id" 
-                                                                                                        value="<?php echo e(isset($group)? $group->id: ''); ?>"> 
+                                                                                                 <input type="hidden" name="id"
+
                                                 <span class="focus-border"></span>
                                                 <?php if($errors->has('percentage')): ?>
                                                     <span class="invalid-feedback" role="alert">
