@@ -92,6 +92,6 @@
 
 <!-- Page Content  -->
     <div id="main-content">
-        
+
 
 <?php /**PATH /home/hassangomaa/Documents/Laravel_projects/noLicenceLMS/LMS_Elingua/resources/views/backend/partials/header.blade.php ENDPATH**/ ?>

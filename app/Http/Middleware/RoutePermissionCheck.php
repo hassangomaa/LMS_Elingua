@@ -15,25 +15,29 @@ class RoutePermissionCheck
      */
     public function handle($request, Closure $next, $route_name)
     {
+        return $next($request);
+
         if (auth()->check()) {
             if (auth()->user()->role_id == 1) {
                 return $next($request);
-            } else {
-                if (isModuleActive('OrgInstructorPolicy')) {
-                    $roles = app('policy_permission_list');
-                    $role = $roles->where('id', auth()->user()->policy_id)->first();
-                }else{
-                    $roles = app('permission_list');
-                    $role = $roles->where('id', auth()->user()->role_id)->first();
-                }
-
-                if ($role != null && $role->permissions->contains('route', $route_name)) {
-                    return $next($request);
-                } else {
-                    abort('403');
-                }
             }
+// else {
+//                if (isModuleActive('OrgInstructorPolicy')) {
+//                    $roles = app('policy_permission_list');
+//                    $role = $roles->where('id', auth()->user()->policy_id)->first();
+//                }else{
+//                    $roles = app('permission_list');
+//                    $role = $roles->where('id', auth()->user()->role_id)->first();
+//                }
+//
+//                if ($role != null && $role->permissions->contains('route', $route_name)) {
+//                    return $next($request);
+//                } else {
+//                    abort('403');
+//                }
+//            }
         } else {
+
             return redirect(route('login'));
         }
         abort('403');
