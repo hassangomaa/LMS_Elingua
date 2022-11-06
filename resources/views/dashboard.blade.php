@@ -1,4 +1,4 @@
-    @extends('backend.master')
+@extends('backend.master')
 @push('styles')
     <link rel="stylesheet" href="{{asset('public/backend/css/daterangepicker.css')}}">
 @endpush
