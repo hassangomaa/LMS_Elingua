@@ -14,3 +14,4 @@ storage/*.key
 /public/uploads
 /public/database-backup
 /modules_statuses.json
+/storage/framework/cache/data
